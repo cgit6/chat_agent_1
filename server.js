@@ -1,63 +1,44 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
+// 引入自定義日誌模塊
+const logger = require("./utils/logger");
+// 引入配置模塊
+const config = require('./config');
+// 引入 API 路由
+const routes = require('./routes');
 
-const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN || "你的Page Token";
-const VERIFY_TOKEN = process.env.VERIFY_TOKEN || "你自己定義的驗證碼";
+// 環境變量檢查結果
+const configValid = config.isConfigValid();
+if (!configValid) {
+  console.error("由於環境變量缺失，應用程序可能無法正常運行。");
+}
 
 const app = express();
 app.use(bodyParser.json());
 
-app.get("/webhook", (req, res) => {
-  if (
-    req.query["hub.mode"] === "subscribe" &&
-    req.query["hub.verify_token"] === VERIFY_TOKEN
-  ) {
-    res.status(200).send(req.query["hub.challenge"]);
-  } else {
-    res.sendStatus(403);
-  }
-});
+// 使用 API 路由
+app.use('/api/log', routes.apiRoutes);
 
-app.post("/webhook", async (req, res) => {
-  const body = req.body;
-
-  if (body.object === "page") {
-    body.entry.forEach((entry) => {
-      const webhook_event = entry.messaging[0];
-      const sender_psid = webhook_event.sender.id;
-
-      if (webhook_event.message) {
-        handleMessage(sender_psid, webhook_event.message);
-      }
-    });
-
-    res.status(200).send("EVENT_RECEIVED");
-  } else {
-    res.sendStatus(404);
-  }
-});
-
-async function handleMessage(sender_psid, received_message) {
-  const response = {
-    text: `你剛說了：${received_message.text}`,
-  };
-
-  await axios.post(
-    `https://graph.facebook.com/v19.0/me/messages?access_token=${PAGE_ACCESS_TOKEN}`,
-    {
-      recipient: { id: sender_psid },
-      message: response,
-    }
-  );
-}
+// 使用 Webhook 路由 (掛載到根路徑)
+app.use('/', routes.webhookRoutes);
 
 // 根路徑的健康檢查端點
 app.get("/", (req, res) => {
-  res.status(200).send("Facebook Messenger Bot is running!hi");
+  res.status(200).send("Facebook Messenger Bot is running! 環境變量檢查: " + 
+    `VERIFY_TOKEN: ${config.VERIFY_TOKEN ? "已設置" : "未設置"}, ` +
+    `PAGE_ACCESS_TOKEN: ${config.PAGE_ACCESS_TOKEN ? "已設置" : "未設置"}`);
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = config.PORT;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+  console.log(`訪問 http://localhost:${PORT} 查看服務狀態`);
+  console.log(`訪問 http://localhost:${PORT}/api/log 查看記錄的訊息日誌`);
+  console.log(`訪問 http://localhost:${PORT}/api/log/stats 查看訊息統計信息`);
+  
+  // 記錄服務啟動信息
+  logger.logMessage(`服務已啟動，監聽端口 ${PORT}`, "SYSTEM", "startup");
 });
