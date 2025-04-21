@@ -1,0 +1,26 @@
+# 版本控制
+.git
+.gitignore
+
+# 環境文件
+.env
+.env.local
+.env.*
+
+# 依賴目錄
+node_modules
+
+# 日誌
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 開發工具配置
+.vscode
+.idea
+*.swp
+*.swo
+
+# 系統文件
+.DS_Store
+Thumbs.db 

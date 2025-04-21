@@ -20,5 +20,9 @@ ENV NODE_ENV=production
 # 暴露端口
 EXPOSE 8080
 
+# 健康檢查（確保應用已啟動）
+HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:${PORT} || exit 1
+
 # 啟動命令
-CMD ["node", "server.js"] 
+CMD ["npm", "start"] 
