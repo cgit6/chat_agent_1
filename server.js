@@ -1,29 +1,63 @@
-// 導入需要的模塊
 const express = require("express");
-const cors = require("cors");
-const dotenv = require("dotenv");
+const bodyParser = require("body-parser");
+const axios = require("axios");
 
-// 載入環境變數
-dotenv.config();
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN || "你的Page Token";
+const VERIFY_TOKEN = process.env.VERIFY_TOKEN || "你自己定義的驗證碼";
 
-// 初始化應用
 const app = express();
+app.use(bodyParser.json());
 
-// 中間件
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-// 環境變數中的端口，或默認為8080（Cloud Run推薦）
-const PORT = process.env.PORT || 8080;
-
-// 路由
-app.get("/", (req, res) => {
-  res.send("歡迎使用 Node.js 服務! 該服務已成功部署到 Google Cloud Run.");
+app.get("/webhook", (req, res) => {
+  if (
+    req.query["hub.mode"] === "subscribe" &&
+    req.query["hub.verify_token"] === VERIFY_TOKEN
+  ) {
+    res.status(200).send(req.query["hub.challenge"]);
+  } else {
+    res.sendStatus(403);
+  }
 });
 
-// 啟動伺服器
+app.post("/webhook", async (req, res) => {
+  const body = req.body;
+
+  if (body.object === "page") {
+    body.entry.forEach((entry) => {
+      const webhook_event = entry.messaging[0];
+      const sender_psid = webhook_event.sender.id;
+
+      if (webhook_event.message) {
+        handleMessage(sender_psid, webhook_event.message);
+      }
+    });
+
+    res.status(200).send("EVENT_RECEIVED");
+  } else {
+    res.sendStatus(404);
+  }
+});
+
+async function handleMessage(sender_psid, received_message) {
+  const response = {
+    text: `你剛說了：${received_message.text}`,
+  };
+
+  await axios.post(
+    `https://graph.facebook.com/v19.0/me/messages?access_token=${PAGE_ACCESS_TOKEN}`,
+    {
+      recipient: { id: sender_psid },
+      message: response,
+    }
+  );
+}
+
+// 根路徑的健康檢查端點
+app.get("/", (req, res) => {
+  res.status(200).send("Facebook Messenger Bot is running!");
+});
+
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  console.log(`服務器運行在端口 ${PORT}`);
-  console.log("按下 CTRL+C 停止服務器");
+  console.log(`Server is running on port ${PORT}`);
 });

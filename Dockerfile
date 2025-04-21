@@ -1,6 +1,9 @@
 # 使用官方Node.js輕量級鏡像
 FROM node:18-slim
 
+# 安裝 curl 用於健康檢查
+RUN apt-get update && apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/*
+
 # 創建應用目錄
 WORKDIR /app
 
@@ -16,6 +19,9 @@ COPY . .
 # 設定環境變量
 ENV PORT=8080
 ENV NODE_ENV=production
+# Facebook Messenger Token 將從 Cloud Run 環境變量中傳入
+# ENV PAGE_ACCESS_TOKEN=
+# ENV VERIFY_TOKEN=
 
 # 暴露端口
 EXPOSE 8080
