@@ -1,8 +1,1 @@
-docker build -t my-chat-app .
-docker run -p 8080:8080 my-chat-app
 
-PAGE_ACCESS_TOKEN=EAAnSfrwW2yEBOyN3BisUU7HhBH22GcVNJUptpkwq0WyjiAHWLH5hWLLKZAclPYfn5vOxKEOB04vxRM4QJbNRvX1TOad6AZAj1ZCj6IMRlIOU01zWS5ju49in1oA17BeHd4hXIls320i4kMO87Mv1ADWOWN9ZCZCcjW7Y0UQ8Xn9zhQeLZCs5GowJcT682ZAaWGMmqZBxOZC6ZChSqssghGS4oxpZBGRqwZDZD
-
-## 測試方法
-
-先 在本地執行在用 gnork 串接
