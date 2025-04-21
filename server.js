@@ -54,7 +54,7 @@ async function handleMessage(sender_psid, received_message) {
 
 // 根路徑的健康檢查端點
 app.get("/", (req, res) => {
-  res.status(200).send("Facebook Messenger Bot is running!");
+  res.status(200).send("Facebook Messenger Bot is running!hi");
 });
 
 const PORT = process.env.PORT || 8080;
