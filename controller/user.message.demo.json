@@ -1,0 +1,27 @@
+body: 
+  "object": "page", // 表示這個事件是針對 Facebook 頁面的。當用戶與你的 Facebook 頁面互動時，會發送這樣的事件。
+  // 事件的詳細信息
+  "entry": [
+    {
+      "time": 1745828787596, // 事件發生的時間戳
+      "id": "554852617721014", // 這是 Facebook 頁面的 ID，表示該事件是針對哪個頁面發生的。
+
+      // 包含與用戶的消息交互的詳細信息。
+      "messaging": [
+        {
+          "sender": {
+            "id": "9699137316840143" // 用戶 id
+          },
+          "recipient": {
+            "id": "554852617721014" // 頁面 id
+          },
+          "timestamp": 1745828787149, // 發送的時間戳
+          "message": {
+            "mid": "m_lXQxZPG9uTYLTl8aaw_3tK0glwi8C1h9zGuFaCTyHvlrzAGJmUJoSmCIaRjNzJ3gg", // 消息的唯一標識符
+            "text": "我在做機器人這是測試環境"  // 內容
+          }
+        }
+      ]
+    }
+  ]
+}
