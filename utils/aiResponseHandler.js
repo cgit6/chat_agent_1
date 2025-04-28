@@ -110,9 +110,9 @@ const generateAIResponseForNewUser = async (
       "ai_processing"
     );
 
-    const model = initGeminiModel();
-    const history = getConversationHistory(userId);
-    const formattedHistory = formatConversationHistory(history);
+    const model = initGeminiModel(); // 初始化 Gemini 模型
+    const history = getConversationHistory(userId); // 獲取用戶的對話歷史
+    const formattedHistory = formatConversationHistory(history); // 格式化對話歷史
 
     // 創建提示模板，包含對話歷史和最新消息
     const promptTemplate = PromptTemplate.fromTemplate(`

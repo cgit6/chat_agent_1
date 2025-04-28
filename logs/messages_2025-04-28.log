@@ -395,3 +395,6 @@
 [2025-04-28T21:44:40.161Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
 [2025-04-28T21:44:41.795Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
 [2025-04-28T21:44:42.475Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-28T21:47:40.594Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-28T21:47:41.401Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-28T21:47:48.063Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
