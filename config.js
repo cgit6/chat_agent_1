@@ -13,8 +13,13 @@ const config = {
   PAGE_ACCESS_TOKEN: process.env.PAGE_ACCESS_TOKEN,
   VERIFY_TOKEN: process.env.VERIFY_TOKEN,
   MONGODB_URL: process.env.MONGODB_URL,
-  // AI 相關
+  // AI LLM 相關
   GEMINI_API_KEY: process.env.GEMINI_API_KEY,
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+  // 向量資料庫相關
+  PINECONE_API_KEY: process.env.PINECONE_API_KEY,
+  PINECONE_ENVIRONMENT: process.env.PINECONE_ENVIRONMENT,
+  PINECONE_INDEX_NAME: process.env.PINECONE_INDEX_NAME,
 
   // 服務器相關
   PORT: process.env.PORT || 8080,

@@ -1,0 +1,21 @@
+[
+  {
+    "question": "退貨啦",
+    "answer": "您好，請問有什麼我可以協助的？",
+    "category": "退貨",
+    "keywords": [
+      "退貨"
+    ],
+    "intent": "請求退貨",
+    "urgency": "中",
+    "audience": "所有客戶",
+    "actions": [
+      "提供退貨原因",
+      "提供訂單號碼"
+    ],
+    "related_questions": [
+      "如何進行退貨？",
+      "退貨流程是什麼？"
+    ]
+  }
+]

@@ -4,10 +4,7 @@
 const axios = require("axios");
 const logger = require("../utils/logger");
 const config = require("../config");
-const {
-  generateAIResponseForNewUser, // 處理新用戶的訊息
-  generateAIResponseForOldUser, // 處理老用戶的訊息
-} = require("../utils/aiResponseHandler");
+const { generateAIResponse } = require("../utils/aiResponseHandler");
 
 const User = require("../models/User"); // 使用者 schema
 
@@ -173,12 +170,35 @@ async function handleIncomingMessage(senderPsid, message, isNewUser) {
     logAttachmentMessage(senderPsid, attachmentType); // 記錄附件訊息
   }
 
-  if (isNewUser) {
-    // 產生並發送回覆，進行新用戶的處理流程
-    await handleNewUserMessage(senderPsid, message);
-  } else {
-    // 處理老用戶的問題
-    await handleOldUserMessage(senderPsid, message);
+  await generateAndSendResponse(senderPsid, message, isNewUser); // 使用統一的訊息處理函數，而將用戶類型作為參數傳遞
+}
+
+// 回應訊息
+async function generateAndSendResponse(senderPsid, message, isNewUser = false) {
+  // 檢查是否為文字訊息
+  if (!message.text) {
+    const response = {
+      text: "我收到了您的訊息，但目前只能回應文字內容。",
+    };
+    await sendResponse(senderPsid, response);
+    return;
+  }
+
+  try {
+    // 調用 AI 回應產生器，將 isNewUser 作為參數傳遞
+    const aiResponse = await generateAIResponse(senderPsid, message.text, {
+      isNewUser,
+    });
+
+    const response = { text: aiResponse };
+    await sendResponse(senderPsid, response);
+  } catch (error) {
+    // 錯誤處理邏輯保持不變
+    console.error("AI 回應產生器錯誤:", error);
+    const fallbackResponse = {
+      text: `很抱歉，我暫時無法處理您的請求。請稍後再試。`,
+    };
+    await sendResponse(senderPsid, fallbackResponse);
   }
 }
 
@@ -252,112 +272,6 @@ exports.handleWebhook = async (req, res) => {
     res.sendStatus(404);
   }
 };
-
-/**
- * 處理新用戶發送的訊息
- * @param {string} sender_psid - 發送者的 PSID
- * @param {object} received_message - 收到的訊息對象
- */
-async function handleNewUserMessage(sender_psid, received_message) {
-  console.log("開始處理訊息");
-
-  // 檢查訊息是否包含文本，如果沒有收到訊息，則返回默認回應
-  if (!received_message.text) {
-    // console.log("訊息不包含文本，可能是貼圖、附件或其他內容");
-
-    // 如果是貼圖、附件等，可以返回默認回應
-    const response = {
-      text: "我收到了您的訊息，但目前只能回應文字內容。",
-    };
-
-    await sendResponse(sender_psid, response); // 發送回應
-    return;
-  }
-
-  // ❗之後這邊可以處理用戶點擊添加好友的功能
-
-  try {
-    // 使用 AI 處理用戶消息
-    const aiResponse = await generateAIResponseForNewUser(
-      sender_psid,
-      received_message.text
-    );
-    // console.log(`AI 生成的回應: ${aiResponse}`);
-
-    const response = {
-      text: aiResponse,
-    };
-    // console.log(
-    //   `準備回覆給 ${sender_psid}:`,
-    //   JSON.stringify(response, null, 2) //
-    // );
-
-    await sendResponse(sender_psid, response); // 發送回應
-  } catch (error) {
-    console.error("AI 處理消息失敗:", error);
-
-    // 失敗時使用默認回應
-    const fallbackResponse = {
-      text: `很抱歉，我暫時無法處理您的請求。請稍後再試。`,
-    };
-
-    console.log(`發送默認回應給 ${sender_psid}`);
-    await sendResponse(sender_psid, fallbackResponse);
-  }
-}
-
-/**
- * 處理老用戶發送的訊息
- * @param {string} sender_psid - 發送者的 PSID
- * @param {object} received_message - 收到的訊息對象
- */
-async function handleOldUserMessage(sender_psid, received_message) {
-  console.log("開始處理訊息");
-
-  // 檢查訊息是否包含文本，如果沒有收到訊息，則返回默認回應
-  if (!received_message.text) {
-    // console.log("訊息不包含文本，可能是貼圖、附件或其他內容");
-
-    // 如果是貼圖、附件等，可以返回默認回應
-    const response = {
-      text: "我收到了您的訊息，但目前只能回應文字內容。",
-    };
-
-    await sendResponse(sender_psid, response); // 發送回應
-    return;
-  }
-
-  // ❗之後這邊可以處理用戶點擊添加好友的功能
-
-  try {
-    // 使用 AI 處理用戶消息
-    const aiResponse = await generateAIResponseForOldUser(
-      sender_psid,
-      received_message.text
-    );
-    // console.log(`AI 生成的回應: ${aiResponse}`);
-
-    const response = {
-      text: aiResponse,
-    };
-    // console.log(
-    //   `準備回覆給 ${sender_psid}:`,
-    //   JSON.stringify(response, null, 2) //
-    // );
-
-    await sendResponse(sender_psid, response); // 發送回應
-  } catch (error) {
-    console.error("AI 處理消息失敗:", error);
-
-    // 失敗時使用默認回應
-    const fallbackResponse = {
-      text: `很抱歉，我暫時無法處理您的請求。請稍後再試。`,
-    };
-
-    console.log(`發送默認回應給 ${sender_psid}`);
-    await sendResponse(sender_psid, fallbackResponse);
-  }
-}
 
 /**
  * 發送回應給用戶

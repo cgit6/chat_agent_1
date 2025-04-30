@@ -1,0 +1,21 @@
+[
+  {
+    "question": "hello im friend",
+    "answer": "🎉 歡迎加入 K&Q 服飾 ❤️  \n新粉購物金請點下方連結⬇️  \nhttps://jambolive.tv/pay/order/16918/  \n🛎提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！",
+    "category": "新用戶優惠",
+    "keywords": [
+      "新粉",
+      "購物金",
+      "結單",
+      "優惠"
+    ],
+    "intent": "歡迎新用戶並提供購物金優惠",
+    "urgency": "中",
+    "audience": "新用戶",
+    "actions": [
+      "點擊連結領取購物金",
+      "在一週內與得標商品一起結單"
+    ],
+    "related_questions": []
+  }
+]

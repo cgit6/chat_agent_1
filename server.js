@@ -26,7 +26,8 @@ if (!configValid) {
 const app = express();
 app.use(bodyParser.json());
 
-app.use("/api/log", routes.apiRoutes); // 使用 API 路由
+app.use("/api", routes.apiRoutes); // 使用 API 路由
+app.use("/api/log", routes.logRoutes); // 使用日誌路由
 app.use("/v1/facebook_bot", routes.webhookRoutes); // 使用 facebook Webhook 路由 (掛載到根路徑)
 
 // 根路徑的健康檢查端點
@@ -46,6 +47,9 @@ app.listen(PORT, () => {
   console.log(`訪問 http://localhost:${PORT} 查看服務狀態`);
   console.log(`訪問 http://localhost:${PORT}/api/log 查看記錄的訊息日誌`);
   console.log(`訪問 http://localhost:${PORT}/api/log/stats 查看訊息統計信息`);
+  console.log(
+    `訪問 http://localhost:${PORT}/api/test-pinecone 測試 Pinecone 連接`
+  );
 
   // 記錄服務啟動信息
   logger.logMessage(`服務已啟動，監聽端口 ${PORT}`, "SYSTEM", "startup");
