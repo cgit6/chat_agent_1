@@ -188,6 +188,7 @@ async function generateAndSendResponse(senderPsid, message, isNewUser = false) {
     // 調用 AI 回應產生器，將 isNewUser 作為參數傳遞
     const aiResponse = await generateAIResponse(senderPsid, message.text, {
       isNewUser,
+      useTestMode: false, // 強制使用測試模式
     });
 
     const response = { text: aiResponse };

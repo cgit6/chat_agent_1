@@ -245,8 +245,10 @@ function getExistingUserPromptTemplate() {
  * @returns {Promise<string>} - AI 生成的回應
  */
 const generateAIResponse = async (userId, userMessage, options = {}) => {
-  // 強制啟用測試模式
-  const { isNewUser = false, useTestMode = true } = options;
+  const {
+    isNewUser = false, // 是否為新用戶
+    useTestMode = false, // 是否使用測試模式
+  } = options;
 
   try {
     // 記錄請求
@@ -256,7 +258,7 @@ const generateAIResponse = async (userId, userMessage, options = {}) => {
       "ai_processing"
     );
 
-    console.log("AI 回應處理，測試模式:", useTestMode ? "開啟" : "關閉");
+    // console.log("AI 回應處理，測試模式:", useTestMode ? "開啟" : "關閉");
 
     const model = initOpenAIModel(); // 初始化 OpenAI 模型
     const history = getConversationHistory(userId); // 獲取用戶的對話歷史
@@ -281,25 +283,27 @@ const generateAIResponse = async (userId, userMessage, options = {}) => {
     // 將對話添加到 llm 的對話紀錄中(記憶)
     addToConversationHistory(userId, userMessage, cleanedResponse);
 
-    // 上傳對話紀錄到資料庫(pinecone、mongoDB)，強制使用測試模式
+    // 上傳對話紀錄到資料庫(pinecone、mongoDB)
     try {
-      console.log("開始處理並存儲對話 (測試模式)");
+      // console.log(
+      //   `開始處理並存儲對話 (測試模式: ${useTestMode ? "開啟" : "關閉"})`
+      // );
       const storeResult = await processAndStoreConversation(
         userId,
         userMessage,
         cleanedResponse,
         {
-          useTestMode: true,
+          useTestMode: useTestMode, // 使用傳入的參數
+          syncProcess: false, // 同步處理向量存儲
         }
       );
-      console.log("處理並存儲對話結果:", storeResult);
+      // console.log("處理並存儲對話結果:", storeResult);
     } catch (storeError) {
       console.error("處理並存儲對話失敗:", storeError);
     }
 
     // 記錄成功生成
     logger.logMessage(`成功生成 AI 回應`, userId, "ai_response_success");
-
     return cleanedResponse;
   } catch (error) {
     // 記錄錯誤

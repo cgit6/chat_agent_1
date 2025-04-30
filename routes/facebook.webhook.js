@@ -1,6 +1,4 @@
-/**
- * Webhook 相關路由
- */
+// facebook.webhook.js
 const express = require("express");
 const router = express.Router();
 const webhookController = require("../controller/facebook.webhook.controller");

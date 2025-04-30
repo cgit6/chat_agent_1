@@ -34,10 +34,43 @@ const fs = require("fs").promises;
  */
 const enrichSingleConversation = async (conversation) => {
   try {
+    console.log("開始豐富對話數據...");
+
+    // 檢查 conversation 對象是否合法
+    if (!conversation || !conversation.question || !conversation.answer) {
+      console.error("無效的對話數據:", conversation);
+      // 返回一個基本的對象，避免後續處理出錯
+      return {
+        ...conversation,
+        category: "未分類",
+        keywords: [],
+        intent: "未知",
+        urgency: "中",
+        audience: "所有客戶",
+        actions: [],
+        related_questions: [],
+      };
+    }
+
     // 初始化 OpenAI API 客戶端
+    console.log("初始化 OpenAI API 客戶端...");
     const openai = new OpenAI({
       apiKey: config.OPENAI_API_KEY,
     });
+
+    if (!config.OPENAI_API_KEY) {
+      console.error("OPENAI_API_KEY 未設置，將使用默認值");
+      return {
+        ...conversation,
+        category: "未分類",
+        keywords: [],
+        intent: "未知",
+        urgency: "中",
+        audience: "所有客戶",
+        actions: [],
+        related_questions: [],
+      };
+    }
 
     // 設定 OpenAI 系統提示詞
     const systemPrompt = `
@@ -194,10 +227,25 @@ const storeConversationToVectorDB = async (
   try {
     console.log("開始將對話存儲到向量資料庫...");
     console.log("使用測試上傳模式:", useTestUpload ? "是" : "否");
+
+    // 檢查 conversation 物件是否有效
+    if (!conversation || typeof conversation !== "object") {
+      throw new Error("無效的對話物件");
+    }
+
+    // 檢查必要屬性
+    if (!conversation._id) {
+      console.warn("對話缺少 _id，可能影響後續更新操作");
+    }
+
     console.log("對話內容:", {
-      id: conversation._id,
-      question: conversation.question.substring(0, 30) + "...",
-      answer: conversation.answer.substring(0, 30) + "...",
+      id: conversation._id || "未知ID",
+      question: conversation.question
+        ? conversation.question.substring(0, 30) + "..."
+        : "未提供問題",
+      answer: conversation.answer
+        ? conversation.answer.substring(0, 30) + "..."
+        : "未提供答案",
     });
 
     // 1. 將對話轉換為 FAQ 格式，確保所有欄位類型正確
@@ -224,36 +272,24 @@ const storeConversationToVectorDB = async (
       throw new Error("FAQ 必須包含問題和答案");
     }
 
-    // 2. 創建臨時 FAQ 文件
-    console.log("正在創建臨時 FAQ 文件...");
-    const tempFaqFilePath = path.join(
-      __dirname,
-      "../data/temp_conversation_faq.json"
-    );
-    await fs.writeFile(tempFaqFilePath, JSON.stringify([faq], null, 2), "utf8");
-    console.log("臨時 FAQ 文件已創建:", tempFaqFilePath);
-
     // 計算內容摘要，用於後續更新
     let contentDigestValue;
     try {
+      // 根據模式選擇使用固定摘要還是計算摘要
       contentDigestValue = useTestUpload
         ? "test_digest_123"
         : createContentDigest(faq);
       console.log("內容摘要計算成功:", contentDigestValue);
     } catch (digestError) {
       console.error("計算內容摘要失敗:", digestError);
+      // 使用時間戳作為備用摘要
       contentDigestValue = "error_digest_" + Date.now();
     }
 
     // 3. 根據模式選擇上傳方法
-    console.log(
-      `開始調用 ${
-        useTestUpload ? "testUploadWithStaticVector" : "uploadFaqToPinecone"
-      } 函數...`
-    );
+    console.log(`開始調用 ${useTestUpload ? "測試上傳" : "標準上傳"} 函數...`);
     let result;
     try {
-      // 根據模式選擇上傳方法
       if (useTestUpload) {
         // 使用測試上傳函數，跳過 OpenAI Embeddings 生成步驟
         result = await testUploadWithStaticVector(faq);
@@ -261,21 +297,18 @@ const storeConversationToVectorDB = async (
         // 使用標準上傳函數
         result = await uploadFaqToPinecone(faq);
       }
-      console.log("上傳調用結果:", result);
+      console.log("上傳調用結果:", result ? "成功" : "失敗");
     } catch (uploadError) {
-      console.error("上傳到向量資料庫失敗:", uploadError);
-      throw uploadError;
-    } finally {
-      // 刪除臨時文件
-      try {
-        await fs.unlink(tempFaqFilePath);
-        console.log("臨時 FAQ 文件已刪除");
-      } catch (unlinkError) {
-        console.error("刪除臨時 FAQ 文件失敗:", unlinkError);
-      }
+      console.error("上傳到向量資料庫失敗:", uploadError.message);
+      // 不中斷流程，返回錯誤信息
+      return {
+        success: false,
+        message: `上傳到向量資料庫失敗: ${uploadError.message}`,
+        error: uploadError,
+      };
     }
 
-    // 更新 Conversation 文檔
+    // 4. 更新 Conversation 文檔
     if (result && result.success) {
       try {
         // 提取向量 ID
@@ -286,6 +319,16 @@ const storeConversationToVectorDB = async (
           vectorId = `faq_${createStableId(faq.question)}`;
         }
         console.log("向量 ID:", vectorId);
+
+        // 確保 conversation._id 存在
+        if (!conversation._id) {
+          console.warn("對話缺少 _id，無法更新 MongoDB 記錄");
+          return {
+            success: true,
+            message: "向量上傳成功，但無法更新 MongoDB 記錄",
+            result: result,
+          };
+        }
 
         // 更新文檔
         await Conversation.findByIdAndUpdate(conversation._id, {
@@ -299,27 +342,45 @@ const storeConversationToVectorDB = async (
 
         logger.logMessage(
           `對話已存儲到向量資料庫，向量 ID: ${vectorId}`,
-          conversation.userId,
+          conversation.userId || "unknown",
           "vector_stored"
         );
+
+        return {
+          success: true,
+          message: "對話成功存儲到向量資料庫並更新MongoDB記錄",
+          vectorId: vectorId,
+          result: result,
+        };
       } catch (updateError) {
-        console.error("更新 Conversation 文檔失敗:", updateError);
+        console.error("更新 Conversation 文檔失敗:", updateError.message);
         logger.logMessage(
           `更新對話文檔失敗: ${updateError.message}`,
-          conversation.userId,
+          conversation.userId || "unknown",
           "mongodb_update_error"
         );
+
+        return {
+          success: true,
+          message: "向量上傳成功，但MongoDB更新失敗",
+          error: updateError.message,
+          result: result,
+        };
       }
     } else {
       console.warn("向量更新未成功，無法更新 Conversation 文檔");
       logger.logMessage(
-        `向量更新未成功，結果: ${JSON.stringify(result)}`,
-        conversation.userId,
+        `向量更新未成功，結果: ${JSON.stringify(result || {})}`,
+        conversation.userId || "unknown",
         "vector_update_warning"
       );
-    }
 
-    return result;
+      return {
+        success: false,
+        message: "向量更新未成功",
+        result: result || { error: "未知錯誤" },
+      };
+    }
   } catch (error) {
     console.error("存儲對話到向量資料庫失敗，詳細錯誤:");
     console.error("錯誤名稱:", error.name);
@@ -328,20 +389,20 @@ const storeConversationToVectorDB = async (
 
     logger.logMessage(
       `存儲對話到向量資料庫失敗: ${error.message}`,
-      conversation.userId || "unknown",
+      conversation?.userId || "unknown",
       "vector_error"
     );
 
     return {
       success: false,
       message: `存儲失敗: ${error.message}`,
-      error: error,
+      error: error.message,
     };
   }
 };
 
 /**
- * 處理並存儲用戶對話
+ * 處理並存儲 (pinecone) 用戶對話
  * @param {string} userId - 用戶ID
  * @param {string} question - 用戶問題
  * @param {string} answer - 機器人回答
@@ -357,7 +418,7 @@ const processAndStoreConversation = async (
   options = {}
 ) => {
   try {
-    const { useTestMode = false, syncProcess = true } = options;
+    const { useTestMode = false, syncProcess = false } = options;
     console.log("處理並存儲用戶對話，測試模式:", useTestMode ? "開啟" : "關閉");
     console.log("同步處理向量存儲:", syncProcess ? "是" : "否");
 
@@ -411,7 +472,7 @@ const processAndStoreConversation = async (
           const vectorResult = await storeConversationToVectorDB(
             savedConversation,
             useTestMode
-          );
+          ); // 存到向量資料庫
           console.log("非同步向量存儲結果:", vectorResult);
         } catch (error) {
           console.error("非同步向量存儲後台處理錯誤:", error);

@@ -1,3 +1,4 @@
+// server.js
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
@@ -28,7 +29,7 @@ app.use(bodyParser.json());
 
 app.use("/api", routes.apiRoutes); // 使用 API 路由
 app.use("/api/log", routes.logRoutes); // 使用日誌路由
-app.use("/v1/facebook_bot", routes.webhookRoutes); // 使用 facebook Webhook 路由 (掛載到根路徑)
+app.use("/api/facebook_bot", routes.webhookRoutes); // 使用 facebook Webhook 路由
 
 // 根路徑的健康檢查端點
 app.get("/", (req, res) => {

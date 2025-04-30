@@ -131,5 +131,39 @@ router.post("/test-conversation-vector", async (req, res) => {
   }
 });
 
+// 添加一個測試聊天功能的調試路由
+router.get("/debug-chat", async (req, res) => {
+  try {
+    const testMessage = req.query.message || "你好";
+    const useTestMode = req.query.test === "true";
+
+    console.log(
+      `測試聊天功能, 測試消息: "${testMessage}", 測試模式: ${
+        useTestMode ? "開啟" : "關閉"
+      }`
+    );
+
+    // 使用 AI 處理消息
+    const response = await generateAIResponse("debug-user", testMessage, {
+      isNewUser: false,
+      useTestMode: useTestMode,
+    });
+
+    return res.json({
+      success: true,
+      message: response,
+      testMode: useTestMode,
+    });
+  } catch (error) {
+    console.error("調試聊天功能失敗:", error);
+    return res.status(500).json({
+      success: false,
+      message: "調試聊天功能失敗",
+      error: error.message,
+      stack: error.stack,
+    });
+  }
+});
+
 // 導出路由器
 module.exports = router;

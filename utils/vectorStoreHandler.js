@@ -144,7 +144,7 @@ const enrichFaqData = async () => {
         const userPrompt = `問題: ${faq.question}\n答案: ${faq.answer}`;
 
         const response = await openai.chat.completions.create({
-          model: "gpt-4", // 或使用其他合適的模型
+          model: "gpt-3.5-turbo-0125", // 或使用其他合適的模型
           messages: [
             { role: "system", content: systemPrompt },
             { role: "user", content: userPrompt },
@@ -192,17 +192,17 @@ const enrichFaqData = async () => {
       }
     }
 
-    // 5. 儲存豐富後的 FAQ 資料到檔案
-    const enrichedFilePath = path.join(
-      __dirname,
-      "../data/customer_service_faq_enriched.json"
-    );
-    await fs.writeFile(
-      enrichedFilePath,
-      JSON.stringify(enrichedFaqData, null, 2),
-      "utf8"
-    );
-    console.log(`已儲存豐富後的 FAQ 資料到 ${enrichedFilePath}`);
+    // // 5. 儲存豐富後的 FAQ 資料到檔案
+    // const enrichedFilePath = path.join(
+    //   __dirname,
+    //   "../data/customer_service_faq_enriched.json"
+    // );
+    // await fs.writeFile(
+    //   enrichedFilePath,
+    //   JSON.stringify(enrichedFaqData, null, 2),
+    //   "utf8"
+    // );
+    // console.log(`已儲存豐富後的 FAQ 資料到 ${enrichedFilePath}`);
 
     return enrichedFaqData;
   } catch (error) {
@@ -345,16 +345,16 @@ const uploadEnrichedFaqToPinecone = async () => {
  */
 const uploadFaqToPinecone = async (directFaq = null) => {
   try {
-    console.log("開始增量上傳 FAQ 到 Pinecone...");
+    // console.log("開始增量上傳 FAQ 到 Pinecone...");
 
     // 初始化
-    console.log("正在初始化 Pinecone 客戶端...");
+    // console.log("正在初始化 Pinecone 客戶端...");
     const pineconeIndex = await initPinecone();
-    console.log("Pinecone 客戶端初始化成功");
+    // console.log("Pinecone 客戶端初始化成功");
 
-    console.log("正在初始化 OpenAI Embeddings...");
+    // console.log("正在初始化 OpenAI Embeddings...");
     const embeddings = initEmbeddings();
-    console.log("OpenAI Embeddings 初始化成功");
+    // console.log("OpenAI Embeddings 初始化成功");
 
     // 如果直接提供了 faq 物件，使用它；否則讀取文件
     console.log("directFaq: ", directFaq); // 傳入的 FAQ 物件
@@ -572,45 +572,70 @@ async function fetchExistingFaqs(pineconeIndex) {
     console.log("Pinecone 索引狀態:", pineconeIndex ? "已初始化" : "未初始化");
 
     if (!pineconeIndex) {
-      throw new Error("Pinecone 索引為空，請檢查初始化過程");
+      console.warn("Pinecone 索引為空，返回空映射");
+      return new Map();
+    }
+
+    // 進行 fetch 請求前再次確認 pineconeIndex 是否有效
+    if (typeof pineconeIndex.fetch !== "function") {
+      console.warn("Pinecone 索引無效，缺少 fetch 方法");
+      return new Map();
     }
 
     console.log("準備發送 fetch 請求到 Pinecone...");
-    console.log(
-      "請求參數:",
-      JSON.stringify({
-        ids: [],
-        includeMetadata: true,
-      })
-    );
 
     // 查詢所有向量
-    const response = await pineconeIndex.fetch({
-      ids: [], // 空數組會返回所有向量
-      includeMetadata: true,
-    });
+    let response;
+    try {
+      response = await pineconeIndex.fetch({
+        ids: [], // 空數組會返回所有向量
+        includeMetadata: true,
+      });
+    } catch (fetchError) {
+      console.error("Pinecone fetch 請求失敗:", fetchError.message);
+      logger.logMessage(
+        `Pinecone fetch 請求失敗: ${fetchError.message}`,
+        "system",
+        "pinecone_fetch_error"
+      );
+      return new Map();
+    }
+
+    // 檢查 response 是否有效
+    if (!response) {
+      console.warn("Pinecone 返回空回應");
+      return new Map();
+    }
 
     console.log("成功獲取 Pinecone 回應");
-    console.log(
-      "回應包含向量數量:",
-      Object.keys(response.vectors || {}).length
-    );
+
+    // 確保 vectors 存在且是物件
+    if (!response.vectors || typeof response.vectors !== "object") {
+      console.warn("Pinecone 回應中沒有有效的 vectors 數據");
+      return new Map();
+    }
 
     // 創建 ID -> {digest, metadata} 的映射
     const faqMap = new Map();
+    const vectorCount = Object.keys(response.vectors).length;
+    console.log("回應包含向量數量:", vectorCount);
 
-    if (!response.vectors) {
-      console.warn("Pinecone 回應中沒有 vectors 數據");
-      return faqMap;
-    }
-
+    // 遍歷並處理所有向量
     for (const [id, data] of Object.entries(response.vectors)) {
+      // 基本檢查：確保 data 和 metadata 存在
+      if (!data || !data.metadata) continue;
+
       // 只處理 FAQ 向量 (檢查 ID 前綴或元數據)
-      if (id.startsWith("faq_") && data.metadata) {
-        faqMap.set(id, {
-          digest: data.metadata.contentDigest || "",
-          metadata: data.metadata,
-        });
+      if (id.startsWith("faq_")) {
+        try {
+          faqMap.set(id, {
+            digest: data.metadata.contentDigest || "",
+            metadata: data.metadata,
+          });
+        } catch (mapError) {
+          console.warn(`處理向量 ${id} 時出錯:`, mapError.message);
+          // 繼續處理其他向量，不中斷流程
+        }
       }
     }
 
@@ -635,9 +660,9 @@ async function fetchExistingFaqs(pineconeIndex) {
       console.error("授權錯誤，請檢查 Pinecone API 金鑰是否正確");
     }
 
-    // 檢查是否為 Pinecone 特定錯誤
-    if (error.message && error.message.includes("Pinecone")) {
-      console.error("Pinecone 特定錯誤，請檢查 Pinecone 配置和狀態");
+    // 檢查是否為 JSON 解析錯誤
+    if (error instanceof SyntaxError && error.message.includes("JSON")) {
+      console.error("JSON 解析錯誤，Pinecone 返回的不是有效的 JSON");
     }
 
     // 記錄到系統日誌
