@@ -233,6 +233,18 @@ const storeConversationToVectorDB = async (
     await fs.writeFile(tempFaqFilePath, JSON.stringify([faq], null, 2), "utf8");
     console.log("臨時 FAQ 文件已創建:", tempFaqFilePath);
 
+    // 計算內容摘要，用於後續更新
+    let contentDigestValue;
+    try {
+      contentDigestValue = useTestUpload
+        ? "test_digest_123"
+        : createContentDigest(faq);
+      console.log("內容摘要計算成功:", contentDigestValue);
+    } catch (digestError) {
+      console.error("計算內容摘要失敗:", digestError);
+      contentDigestValue = "error_digest_" + Date.now();
+    }
+
     // 3. 根據模式選擇上傳方法
     console.log(
       `開始調用 ${
@@ -280,9 +292,7 @@ const storeConversationToVectorDB = async (
           $set: {
             vectorId: vectorId,
             isVectorized: true,
-            contentDigest: useTestUpload
-              ? "test_digest_123"
-              : createContentDigest(faq),
+            contentDigest: contentDigestValue,
           },
         });
         console.log("Conversation 文檔已更新，標記為已向量化");
@@ -337,6 +347,7 @@ const storeConversationToVectorDB = async (
  * @param {string} answer - 機器人回答
  * @param {object} options - 選項
  * @param {boolean} options.useTestMode - 是否使用測試模式上傳到向量資料庫
+ * @param {boolean} options.syncProcess - 是否同步處理向量存儲（不使用setTimeout）
  * @returns {Promise<Object>} - 處理結果
  */
 const processAndStoreConversation = async (
@@ -346,31 +357,73 @@ const processAndStoreConversation = async (
   options = {}
 ) => {
   try {
-    const { useTestMode = false } = options;
+    const { useTestMode = false, syncProcess = true } = options;
     console.log("處理並存儲用戶對話，測試模式:", useTestMode ? "開啟" : "關閉");
+    console.log("同步處理向量存儲:", syncProcess ? "是" : "否");
 
     // 1. 存儲到 MongoDB
+    console.log(`開始將對話存儲到 MongoDB, 用戶: ${userId}`);
     const savedConversation = await storeConversationToMongoDB(
       userId,
       question,
       answer
     );
+    console.log(`對話已存儲到 MongoDB, 文檔 ID: ${savedConversation._id}`);
 
-    // 2. 存儲到向量資料庫 (非阻塞)
-    // 使用 setTimeout 避免阻塞主流程
-    setTimeout(async () => {
+    // 2. 存儲到向量資料庫
+    if (syncProcess) {
+      // 同步處理
+      console.log("正在同步處理向量存儲...");
       try {
-        await storeConversationToVectorDB(savedConversation, useTestMode);
-      } catch (error) {
-        console.error("向量存儲後台處理錯誤:", error);
-      }
-    }, 1000);
+        const vectorResult = await storeConversationToVectorDB(
+          savedConversation,
+          useTestMode
+        );
+        console.log("向量存儲結果:", vectorResult);
 
-    return {
-      success: true,
-      message: "對話已成功處理並存儲",
-      conversation: savedConversation,
-    };
+        // 如果成功向量化，添加到返回結果
+        return {
+          success: true,
+          message: "對話已成功處理並存儲",
+          conversation: savedConversation,
+          vectorResult: vectorResult,
+        };
+      } catch (vectorError) {
+        console.error("向量存儲處理錯誤:", vectorError);
+        logger.logMessage(
+          `向量存儲處理錯誤: ${vectorError.message}`,
+          userId,
+          "vector_error"
+        );
+        // 即使向量存儲失敗也返回成功，因為MongoDB存儲已成功
+        return {
+          success: true,
+          message: "對話已存儲到 MongoDB，但向量存儲失敗",
+          conversation: savedConversation,
+          vectorError: vectorError.message,
+        };
+      }
+    } else {
+      // 非同步處理 (使用 setTimeout 避免阻塞主流程)
+      console.log("將使用非同步方式處理向量存儲...");
+      setTimeout(async () => {
+        try {
+          const vectorResult = await storeConversationToVectorDB(
+            savedConversation,
+            useTestMode
+          );
+          console.log("非同步向量存儲結果:", vectorResult);
+        } catch (error) {
+          console.error("非同步向量存儲後台處理錯誤:", error);
+        }
+      }, 1000);
+
+      return {
+        success: true,
+        message: "對話已存儲到 MongoDB，向量存儲正在後台處理",
+        conversation: savedConversation,
+      };
+    }
   } catch (error) {
     logger.logMessage(
       `處理對話失敗: ${error.message}`,

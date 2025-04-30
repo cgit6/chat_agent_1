@@ -89,5 +89,47 @@ router.get("/test-pinecone", async (req, res) => {
   }
 });
 
+// 添加一個測試對話向量化的 API 端點
+router.post("/test-conversation-vector", async (req, res) => {
+  try {
+    const { userId, question, answer } = req.body;
+
+    if (!question || !answer) {
+      return res.status(400).json({
+        success: false,
+        message: "問題和回答不能為空",
+      });
+    }
+
+    const {
+      processAndStoreConversation,
+    } = require("../utils/conversationHandler");
+
+    // 使用同步方式處理，並啟用測試模式
+    const result = await processAndStoreConversation(
+      userId || "test-user",
+      question,
+      answer,
+      {
+        useTestMode: true,
+        syncProcess: true,
+      }
+    );
+
+    return res.json({
+      success: true,
+      message: "測試對話向量化完成",
+      result,
+    });
+  } catch (error) {
+    console.error("測試對話向量化失敗:", error);
+    return res.status(500).json({
+      success: false,
+      message: "測試對話向量化失敗",
+      error: error.message,
+    });
+  }
+});
+
 // 導出路由器
 module.exports = router;
