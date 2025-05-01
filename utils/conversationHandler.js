@@ -437,7 +437,7 @@ const processAndStoreConversation = async (
       console.log("正在同步處理向量存儲...");
       try {
         const vectorResult = await storeConversationToVectorDB(
-          savedConversation,
+          savedConversation.toObject(),
           useTestMode
         );
         console.log("向量存儲結果:", vectorResult);

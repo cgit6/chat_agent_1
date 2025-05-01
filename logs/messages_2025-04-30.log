@@ -953,3 +953,566 @@
 [2025-04-30T08:00:55.990Z] [PSID:system] [類型:database] MongoDB 連接成功
 [2025-04-30T08:04:12.404Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
 [2025-04-30T08:04:13.384Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T15:21:04.030Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T15:21:05.883Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T15:22:00.554Z] [PSID:9687714748008860] [類型:text] 用戶發送訊息: 你這東西有瑕疵我要退貨
+[2025-04-30T15:22:00.554Z] [PSID:9687714748008860] [類型:ai_processing] 正在生成對用戶 9687714748008860 消息: 你這東西有瑕疵我要退貨 的 AI 回應
+[2025-04-30T15:22:03.814Z] [PSID:9687714748008860] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T15:22:03.815Z] [PSID:9687714748008860] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T15:22:04.292Z] [PSID:9687714748008860] [類型:error] 發送訊息失敗: Request failed with status code 400
+[2025-04-30T15:22:08.358Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T15:22:11.742Z] [PSID:9687714748008860] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_42d31dfa
+[2025-04-30T15:31:05.479Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T15:31:13.870Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T15:31:16.363Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:16:28.106Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:16:28.937Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:19:50.412Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:19:51.477Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:23:38.671Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:23:39.473Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:23:58.622Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:24:02.753Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:24:03.375Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:25:43.758Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:25:44.717Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:26:16.706Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:26:19.429Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:26:26.981Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:38:18.006Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:38:18.921Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:39:27.990Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:39:28.649Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:39:51.958Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:39:52.585Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:40:02.799Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:40:03.405Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:41:50.154Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:41:51.007Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:42:31.624Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:42:32.459Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:42:47.419Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:42:48.114Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:44:07.488Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:44:08.667Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:44:14.635Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:44:17.426Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:44:24.603Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:44:25.366Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:44:33.207Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:44:33.924Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:45:29.002Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:45:30.077Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:45:38.162Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:45:38.897Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:46:20.762Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:46:21.452Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:46:32.679Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:46:33.810Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:46:51.755Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:46:58.151Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:46:58.845Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:48:08.868Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:48:09.848Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:48:52.148Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:48:52.863Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:49:06.888Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:49:07.589Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:49:24.282Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:49:24.929Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:49:52.961Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:49:53.726Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:50:15.212Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:50:15.995Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:50:36.129Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:50:36.798Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:51:10.506Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:51:11.249Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:51:24.137Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:51:24.862Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:51:32.956Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:51:33.991Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:51:50.619Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:51:51.538Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:52:15.839Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:52:16.577Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:52:25.866Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:52:26.524Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:52:42.980Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:53:32.198Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:53:32.963Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:54:26.151Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:54:26.879Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T17:59:41.104Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T17:59:42.229Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T18:02:12.220Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T18:02:13.099Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T18:36:51.164Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T18:36:52.125Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T18:38:03.321Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T18:38:04.734Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T18:40:01.013Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我想要退貨
+[2025-04-30T18:40:01.014Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我想要退貨 的 AI 回應
+[2025-04-30T18:40:01.069Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T18:40:05.047Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T18:40:05.048Z] [PSID:9699137316840143] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T18:40:06.287Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"商品瑕疵/退貨"}
+[2025-04-30T18:40:08.362Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T18:40:09.762Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_6be8ce59
+[2025-04-30T18:40:24.616Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 新朋友
+[2025-04-30T18:40:24.617Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 新朋友 的 AI 回應
+[2025-04-30T18:40:24.618Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-04-30T18:40:29.166Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T18:40:29.167Z] [PSID:9699137316840143] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T18:40:30.013Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"我是新朋友"}
+[2025-04-30T18:40:31.136Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T18:40:41.135Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_18a87d0
+[2025-04-30T18:41:26.374Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T18:41:27.303Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T18:42:23.481Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T18:42:24.206Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T18:44:24.379Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T18:44:25.252Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T18:49:04.046Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T18:49:04.853Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T18:52:13.057Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T18:52:13.983Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T18:58:15.044Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T18:58:15.933Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:07:07.559Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:07:08.340Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:08:10.758Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:08:11.544Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:10:58.018Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:10:58.718Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:11:31.761Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:11:32.454Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:12:27.436Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:12:28.156Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:13:24.553Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:13:25.264Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:14:18.436Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:14:19.250Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:15:07.256Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我要退貨
+[2025-04-30T19:15:07.256Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我要退貨 的 AI 回應
+[2025-04-30T19:15:07.315Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T19:15:07.326Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 1 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:15:07.837Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 2 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:15:08.349Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 3 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:15:08.349Z] [PSID:9699137316840143] [類型:ai_validation_failed] 所有 3 次 AI 回應驗證都失敗，使用預設回應
+[2025-04-30T19:15:10.532Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T19:15:10.534Z] [PSID:9699137316840143] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T19:15:11.360Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"{\"category\":\"未知\",\"confidence\":0}"}
+[2025-04-30T19:15:13.833Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T19:15:15.209Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_2eaa4238
+[2025-04-30T19:16:06.454Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是新平有
+[2025-04-30T19:16:06.454Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是新平有 的 AI 回應
+[2025-04-30T19:16:06.454Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-04-30T19:16:06.457Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 1 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:16:06.970Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 2 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:16:07.485Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 3 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:16:07.485Z] [PSID:9699137316840143] [類型:ai_validation_failed] 所有 3 次 AI 回應驗證都失敗，使用預設回應
+[2025-04-30T19:16:09.296Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T19:16:09.297Z] [PSID:9699137316840143] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T19:16:10.086Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"{\"category\":\"未知\",\"confidence\":0}"}
+[2025-04-30T19:16:11.282Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T19:16:12.609Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_6a144658
+[2025-04-30T19:19:04.190Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:19:05.432Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:19:09.712Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我要退貨
+[2025-04-30T19:19:09.713Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我要退貨 的 AI 回應
+[2025-04-30T19:19:09.767Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T19:19:09.780Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 1 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:19:10.296Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 2 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:19:10.807Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 3 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:19:10.807Z] [PSID:9699137316840143] [類型:ai_validation_failed] 所有 3 次 AI 回應驗證都失敗，使用預設回應
+[2025-04-30T19:19:12.356Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T19:19:12.358Z] [PSID:9699137316840143] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T19:19:13.368Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"{\"category\":\"未知\",\"confidence\":0}"}
+[2025-04-30T19:19:15.691Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T19:19:16.894Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_2eaa4238
+[2025-04-30T19:26:44.335Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是新朋友
+[2025-04-30T19:26:44.336Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是新朋友 的 AI 回應
+[2025-04-30T19:26:44.337Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-04-30T19:26:44.341Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 1 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:26:44.843Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 2 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:26:45.354Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 3 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:26:45.354Z] [PSID:9699137316840143] [類型:ai_validation_failed] 所有 3 次 AI 回應驗證都失敗，使用預設回應
+[2025-04-30T19:26:47.022Z] [PSID:9699137316840143] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T19:26:47.021Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T19:26:47.782Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"{\"category\":\"未知\",\"confidence\":0}"}
+[2025-04-30T19:26:49.485Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T19:26:50.639Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_6a134f2e
+[2025-04-30T19:45:39.662Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:45:40.657Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:50:15.079Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:50:16.000Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:50:22.965Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 測試我是新朋友
+[2025-04-30T19:50:22.966Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 測試我是新朋友 的 AI 回應
+[2025-04-30T19:50:23.041Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T19:50:23.057Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 1 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:50:23.569Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 2 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:50:24.078Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 3 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:50:24.078Z] [PSID:9699137316840143] [類型:ai_validation_failed] 所有 3 次 AI 回應驗證都失敗，使用預設回應
+[2025-04-30T19:50:26.396Z] [PSID:9699137316840143] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T19:50:26.395Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T19:50:27.173Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"{\"category\":\"未知\",\"confidence\":0}"}
+[2025-04-30T19:50:29.840Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T19:50:31.263Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_3a372ca8
+[2025-04-30T19:51:46.091Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:51:47.438Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:53:22.970Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:53:23.937Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:53:33.534Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:53:34.229Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:53:41.976Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 測試我是新朋友
+[2025-04-30T19:53:41.977Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 測試我是新朋友 的 AI 回應
+[2025-04-30T19:53:42.037Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T19:53:42.050Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 1 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:53:42.564Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 2 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:53:43.077Z] [PSID:9699137316840143] [類型:ai_generation_error] AI 回應生成失敗 (第 3 次): Missing value for input variable `"category": "選擇的分類", "confidence": 信心值`
+
+Troubleshooting URL: https://js.langchain.com/docs/troubleshooting/errors/INVALID_PROMPT_INPUT/
+
+[2025-04-30T19:53:43.077Z] [PSID:9699137316840143] [類型:ai_validation_failed] 所有 3 次 AI 回應驗證都失敗，使用預設回應
+[2025-04-30T19:53:47.138Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T19:53:47.140Z] [PSID:9699137316840143] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T19:53:47.924Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"{\"category\":\"未知\",\"confidence\":0}"}
+[2025-04-30T19:53:50.761Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T19:53:52.238Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_3a372ca8
+[2025-04-30T19:55:43.348Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:55:44.358Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:55:52.336Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:55:53.031Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:55:58.429Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 測試我是新朋友
+[2025-04-30T19:55:58.431Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 測試我是新朋友 的 AI 回應
+[2025-04-30T19:55:58.500Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T19:55:59.325Z] [PSID:{"category": "我是新朋友", "confidence": 1}] [類型:text] AI 回應:
+[2025-04-30T19:56:01.284Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T19:56:01.285Z] [PSID:9699137316840143] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T19:56:02.028Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"{\"category\":\"我是新朋友\",\"confidence\":1}"}
+[2025-04-30T19:56:04.586Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T19:56:06.124Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_3a372ca8
+[2025-04-30T19:56:43.998Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:56:45.172Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:56:54.466Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:56:55.180Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:58:43.006Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:58:43.938Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T19:59:38.004Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T19:59:38.857Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:00:21.263Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:00:21.905Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:02:22.810Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:02:23.658Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:02:52.146Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 有朋至遠方來
+[2025-04-30T20:02:52.147Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 有朋至遠方來 的 AI 回應
+[2025-04-30T20:02:52.205Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T20:02:53.171Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 0.9}
+[2025-04-30T20:02:55.211Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:02:55.212Z] [PSID:9699137316840143] [類型:ai_response_success] 成功生成 AI 回應
+[2025-04-30T20:02:56.013Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"{\"category\":\"我是新朋友\",\"confidence\":0.9}"}
+[2025-04-30T20:02:58.510Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:02:59.622Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_442f9164
+[2025-04-30T20:03:38.091Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:03:42.790Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:03:43.602Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:03:52.885Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:03:55.687Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:08:22.089Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:08:23.036Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:10:23.614Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:10:24.376Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:11:03.452Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:11:04.084Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:11:43.537Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是好朋友
+[2025-04-30T20:11:43.538Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是好朋友 的 AI 回應
+[2025-04-30T20:11:43.592Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T20:11:44.474Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 0.8
+[2025-04-30T20:11:44.472Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 0.8}
+[2025-04-30T20:11:44.474Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":0.8}
+[2025-04-30T20:11:44.474Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-04-30T20:11:44.547Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-04-30T20:11:44.547Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-04-30T20:11:46.163Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:11:47.672Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-04-30T20:11:49.427Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:11:50.659Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_6a411aa1
+[2025-04-30T20:11:56.245Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我要退貨
+[2025-04-30T20:11:56.245Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我要退貨 的 AI 回應
+[2025-04-30T20:11:56.245Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-04-30T20:11:57.302Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "商品瑕疵/退貨", "confidence": 0.8}
+[2025-04-30T20:11:57.304Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"商品瑕疵/退貨","confidence":0.8}
+[2025-04-30T20:11:57.304Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 商品瑕疵/退貨, 信心值: 0.8
+[2025-04-30T20:11:57.304Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "商品瑕疵/退貨" 的答案
+[2025-04-30T20:11:57.366Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "商品瑕疵/退貨" 的答案
+[2025-04-30T20:11:57.366Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "商品瑕疵/退貨" 的答案，長度: 79 字符
+[2025-04-30T20:11:59.334Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:12:00.836Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"您好，請您附上出貨單明細，並告知商品名稱以及商品瑕疵照片\n小編這裡查詢商品狀況協助您處理後續\n✅商品收到7~14天內可協助您處理商品問題\n逾期則不受理，請見諒"}
+[2025-04-30T20:12:01.323Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:12:02.776Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_2eaa4238
+[2025-04-30T20:13:04.568Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我收到的東西我覺得是假貨我要退貨 的 AI 回應
+[2025-04-30T20:13:04.568Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我收到的東西我覺得是假貨我要退貨
+[2025-04-30T20:13:04.569Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-04-30T20:13:05.390Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"商品瑕疵/退貨","confidence":0.9}
+[2025-04-30T20:13:05.390Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "商品瑕疵/退貨", "confidence": 0.9}
+[2025-04-30T20:13:05.391Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 商品瑕疵/退貨, 信心值: 0.9
+[2025-04-30T20:13:05.391Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "商品瑕疵/退貨" 的答案
+[2025-04-30T20:13:05.439Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "商品瑕疵/退貨" 的答案，長度: 79 字符
+[2025-04-30T20:13:05.439Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "商品瑕疵/退貨" 的答案
+[2025-04-30T20:13:07.368Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:13:08.273Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"您好，請您附上出貨單明細，並告知商品名稱以及商品瑕疵照片\n小編這裡查詢商品狀況協助您處理後續\n✅商品收到7~14天內可協助您處理商品問題\n逾期則不受理，請見諒"}
+[2025-04-30T20:13:09.600Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:13:10.641Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_1be372c1
+[2025-04-30T20:16:14.819Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:16:15.666Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:16:25.370Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:16:26.234Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:17:15.988Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 叫你老闆出來
+[2025-04-30T20:17:15.989Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 叫你老闆出來 的 AI 回應
+[2025-04-30T20:17:16.053Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T20:17:16.924Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 0.8}
+[2025-04-30T20:17:16.925Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":0.8}
+[2025-04-30T20:17:16.925Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-04-30T20:17:16.925Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 0.8
+[2025-04-30T20:17:16.968Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-04-30T20:17:16.968Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-04-30T20:17:19.134Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:17:20.277Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-04-30T20:17:22.556Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:17:24.426Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_31cb8c3a
+[2025-04-30T20:17:45.188Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 搞什麼東西?
+[2025-04-30T20:17:45.188Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 搞什麼東西? 的 AI 回應
+[2025-04-30T20:17:45.189Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-04-30T20:17:45.977Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 0.8}
+[2025-04-30T20:17:45.978Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":0.8}
+[2025-04-30T20:17:45.979Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 0.8
+[2025-04-30T20:17:45.979Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-04-30T20:17:46.025Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-04-30T20:17:46.025Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-04-30T20:17:48.055Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:17:48.714Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-04-30T20:17:50.007Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:17:50.953Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_77477af7
+[2025-04-30T20:21:13.897Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:21:14.802Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:23:48.250Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:23:49.379Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:24:00.195Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 什麼東西
+[2025-04-30T20:24:00.196Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 什麼東西 的 AI 回應
+[2025-04-30T20:24:00.251Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T20:24:01.432Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 0.8}
+[2025-04-30T20:24:01.434Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":0.8}
+[2025-04-30T20:24:01.434Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 0.8
+[2025-04-30T20:24:01.434Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-04-30T20:24:01.480Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-04-30T20:24:01.480Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-04-30T20:24:03.386Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:24:04.708Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-04-30T20:24:06.472Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:24:07.548Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_262d292a
+[2025-04-30T20:25:43.954Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:25:44.879Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:28:16.229Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:28:17.261Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:30:07.076Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:30:08.102Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:30:23.703Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我要買東西
+[2025-04-30T20:30:23.704Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我要買東西 的 AI 回應
+[2025-04-30T20:30:23.760Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T20:30:24.794Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":0.8}
+[2025-04-30T20:30:24.795Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 0.8
+[2025-04-30T20:30:24.795Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-04-30T20:30:24.793Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 0.8}
+[2025-04-30T20:30:24.846Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-04-30T20:30:24.845Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-04-30T20:30:26.666Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:30:28.242Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-04-30T20:30:30.057Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:30:31.217Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_5972486b
+[2025-04-30T20:32:41.820Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:32:42.991Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:33:30.790Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:33:31.490Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:33:35.969Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:33:36.727Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:39:20.201Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:39:53.077Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是新朋友
+[2025-04-30T20:39:53.078Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是新朋友 的 AI 回應
+[2025-04-30T20:39:53.144Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T20:39:54.210Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 1}
+[2025-04-30T20:39:54.212Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":1}
+[2025-04-30T20:39:54.212Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-04-30T20:39:54.212Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 1
+[2025-04-30T20:39:54.263Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-04-30T20:39:54.264Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-04-30T20:39:56.115Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:39:57.093Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-04-30T20:39:59.368Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:40:00.855Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_6a134f2e
+[2025-04-30T20:40:22.012Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 叫你老闆出來
+[2025-04-30T20:40:22.012Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 叫你老闆出來 的 AI 回應
+[2025-04-30T20:40:22.013Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-04-30T20:40:22.976Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 0.7}
+[2025-04-30T20:40:22.977Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":0.7}
+[2025-04-30T20:40:22.977Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 0.7
+[2025-04-30T20:40:22.977Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-04-30T20:40:23.036Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-04-30T20:40:23.036Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-04-30T20:40:25.087Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:40:26.070Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-04-30T20:40:27.367Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:40:28.349Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_31cb8c3a
+[2025-04-30T20:41:21.020Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:41:22.018Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:41:22.929Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:42:52.849Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 可以幫我買午餐嗎?
+[2025-04-30T20:42:52.850Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 可以幫我買午餐嗎? 的 AI 回應
+[2025-04-30T20:42:52.908Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T20:42:53.697Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 0.8}
+[2025-04-30T20:42:53.699Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":0.8}
+[2025-04-30T20:42:53.699Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-04-30T20:42:53.699Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 0.8
+[2025-04-30T20:42:53.752Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-04-30T20:42:53.752Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-04-30T20:42:55.906Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T20:42:56.922Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-04-30T20:42:59.090Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T20:43:00.303Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_8f7c754
+[2025-04-30T20:52:33.619Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:52:34.715Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:53:47.558Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:53:48.385Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:54:55.371Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:54:56.416Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:55:53.628Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:55:54.357Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:56:06.434Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:56:07.328Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:56:35.319Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:56:36.117Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:56:59.107Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 叫你老闆出來
+[2025-04-30T20:56:59.108Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 叫你老闆出來 的 AI 回應
+[2025-04-30T20:56:59.241Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 7 個分類選項
+[2025-04-30T20:57:00.319Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "其他", "confidence": 0.8}
+[2025-04-30T20:57:00.322Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"其他","confidence":0.8}
+[2025-04-30T20:57:00.322Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 其他, 信心值: 0.8
+[2025-04-30T20:57:00.322Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "其他" 的答案
+[2025-04-30T20:57:00.378Z] [PSID:9699137316840143] [類型:db_query_empty] 找不到分類 "其他" 的記錄
+[2025-04-30T20:57:00.419Z] [PSID:9699137316840143] [類型:mongodb_error] 存儲對話到 MongoDB 失敗: Conversation validation failed: answer: Path `answer` is required.
+[2025-04-30T20:57:00.439Z] [PSID:9699137316840143] [類型:process_error] 處理對話失敗: Conversation validation failed: answer: Path `answer` is required.
+[2025-04-30T20:57:01.340Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"{\"category\":\"其他\",\"confidence\":0.8}"}
+[2025-04-30T20:58:15.653Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:58:16.594Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:58:35.011Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:58:37.752Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T20:59:13.958Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T20:59:14.836Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T21:00:00.433Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T21:00:01.436Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T21:00:09.845Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T21:00:10.697Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T21:02:27.995Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T21:02:28.923Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T21:02:34.480Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T21:02:35.122Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T21:03:31.480Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T21:03:32.520Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T21:03:48.524Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T21:04:00.164Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T21:04:21.613Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 叫你老闆出來
+[2025-04-30T21:04:21.614Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 叫你老闆出來 的 AI 回應
+[2025-04-30T21:04:21.733Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-04-30T21:04:22.618Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "其他", "confidence": 0.8}
+[2025-04-30T21:04:22.619Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"其他","confidence":0.8}
+[2025-04-30T21:04:22.620Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 其他, 信心值: 0.8
+[2025-04-30T21:04:22.620Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "其他" 的答案
+[2025-04-30T21:04:22.676Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "其他" 的答案
+[2025-04-30T21:04:22.676Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "其他" 的答案，長度: 35 字符
+[2025-04-30T21:04:24.944Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T21:04:25.886Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"因為我現在是客服實習生，所以知道有限，待會等我詢問完主管就會馬上回復您"}
+[2025-04-30T21:04:28.342Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T21:04:29.613Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_31cb8c3a
+[2025-04-30T21:04:41.783Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 直播什麼時候? 的 AI 回應
+[2025-04-30T21:04:41.783Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 直播什麼時候?
+[2025-04-30T21:04:41.783Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-04-30T21:04:42.490Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "直播時間", "confidence": 0.9}
+[2025-04-30T21:04:42.491Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"直播時間","confidence":0.9}
+[2025-04-30T21:04:42.491Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 直播時間, 信心值: 0.9
+[2025-04-30T21:04:42.491Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "直播時間" 的答案
+[2025-04-30T21:04:42.542Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "直播時間" 的答案
+[2025-04-30T21:04:42.542Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "直播時間" 的答案，長度: 62 字符
+[2025-04-30T21:04:47.743Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T21:04:48.544Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"週一到週五 08:00~18:00；18:00~00:00\n週六、週日不定時直播\n請多幫我們按讚追蹤粉絲團，直播時會通知您唷"}
+[2025-04-30T21:04:49.745Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T21:04:51.020Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_9fe790d
+[2025-04-30T21:05:19.432Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 幫我買午餐好不好?
+[2025-04-30T21:05:19.433Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 幫我買午餐好不好? 的 AI 回應
+[2025-04-30T21:05:19.433Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-04-30T21:05:20.204Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "其他", "confidence": 0.8}
+[2025-04-30T21:05:20.205Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"其他","confidence":0.8}
+[2025-04-30T21:05:20.205Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 其他, 信心值: 0.8
+[2025-04-30T21:05:20.205Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "其他" 的答案
+[2025-04-30T21:05:20.278Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "其他" 的答案，長度: 35 字符
+[2025-04-30T21:05:20.278Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "其他" 的答案
+[2025-04-30T21:05:22.534Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-04-30T21:05:23.189Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"因為我現在是客服實習生，所以知道有限，待會等我詢問完主管就會馬上回復您"}
+[2025-04-30T21:05:25.063Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-04-30T21:05:26.176Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_60a242f5
+[2025-04-30T21:06:03.361Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T21:06:04.233Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T21:06:53.180Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T21:06:54.410Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-04-30T21:07:01.484Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-04-30T21:07:02.199Z] [PSID:system] [類型:database] MongoDB 連接成功
