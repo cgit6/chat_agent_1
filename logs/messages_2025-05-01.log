@@ -1,0 +1,681 @@
+[2025-05-01T08:49:11.663Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T08:49:12.712Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T08:49:18.985Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T08:49:19.807Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T08:49:29.775Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T08:49:30.587Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T08:50:29.433Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T08:50:30.482Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T08:51:04.996Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T08:51:06.193Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T08:51:14.884Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T08:51:15.623Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T09:08:18.779Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T09:08:19.907Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T09:23:43.092Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T09:23:44.011Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T09:36:55.657Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T09:36:56.830Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T09:37:05.279Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T09:37:10.731Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T09:37:11.489Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T09:37:29.292Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T09:37:30.197Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T09:39:23.161Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是
+[2025-05-01T09:39:23.161Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T09:39:23.162Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是 的 AI 回應
+[2025-05-01T09:39:23.297Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T09:39:24.927Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "其他", "confidence": 0.8}
+[2025-05-01T09:39:24.928Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"其他","confidence":0.8}
+[2025-05-01T09:39:24.928Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "其他" 的答案
+[2025-05-01T09:39:24.928Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 其他, 信心值: 0.8
+[2025-05-01T09:39:25.001Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "其他" 的答案
+[2025-05-01T09:39:25.002Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "其他" 的答案，長度: 35 字符
+[2025-05-01T09:39:26.803Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T09:39:27.812Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"因為我現在是客服實習生，所以知道有限，待會等我詢問完主管就會馬上回復您"}
+[2025-05-01T09:39:30.630Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T09:39:32.347Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_c463e
+[2025-05-01T09:41:44.687Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T09:41:45.734Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T09:41:58.047Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是
+[2025-05-01T09:41:58.048Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T09:41:59.052Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"請繼續補充您的訊息。"}
+[2025-05-01T09:42:47.630Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T09:42:48.736Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T09:42:50.191Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是
+[2025-05-01T09:42:50.192Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T09:42:50.633Z] [PSID:9699137316840143] [類型:error] 發送訊息失敗: Request failed with status code 400
+[2025-05-01T09:43:13.827Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 新朋友
+[2025-05-01T09:43:13.827Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T09:43:14.249Z] [PSID:9699137316840143] [類型:error] 發送訊息失敗: Request failed with status code 400
+[2025-05-01T09:44:09.241Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T09:44:10.341Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T09:44:18.549Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是
+[2025-05-01T09:44:18.549Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T09:44:27.467Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 新朋友
+[2025-05-01T09:44:27.467Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T09:44:38.042Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是新朋友
+[2025-05-01T09:44:38.042Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T09:44:53.391Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 完成
+[2025-05-01T09:44:53.392Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T09:45:26.640Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 結束
+[2025-05-01T09:45:26.640Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T09:45:26.641Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是 新朋友 我是新朋友 完成 結束 的 AI 回應
+[2025-05-01T09:45:26.757Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T09:45:27.601Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 1}
+[2025-05-01T09:45:27.603Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":1}
+[2025-05-01T09:45:27.603Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 1
+[2025-05-01T09:45:27.603Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-05-01T09:45:27.659Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-05-01T09:45:27.658Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-05-01T09:45:29.491Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T09:45:30.588Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-05-01T09:45:33.317Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T09:45:34.640Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_19586ab
+[2025-05-01T14:14:54.461Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 退 的 AI 回應
+[2025-05-01T14:14:54.461Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: START, 是否回應: true
+[2025-05-01T14:14:54.461Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 退
+[2025-05-01T14:14:54.569Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T14:14:55.402Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "商品瑕疵/退貨", "confidence": 0.9}
+[2025-05-01T14:14:55.403Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"商品瑕疵/退貨","confidence":0.9}
+[2025-05-01T14:14:55.404Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 商品瑕疵/退貨, 信心值: 0.9
+[2025-05-01T14:14:55.404Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T14:14:55.455Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T14:14:55.455Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "商品瑕疵/退貨" 的答案，長度: 79 字符
+[2025-05-01T14:14:58.273Z] [PSID:9687714748008860] [類型:text] 用戶發送訊息: 好的
+[2025-05-01T14:14:58.273Z] [PSID:9687714748008860] [類型:fsm_state] 用戶 9687714748008860 的狀態: DONE, 是否回應: true
+[2025-05-01T14:14:58.273Z] [PSID:9687714748008860] [類型:ai_processing] 正在生成對用戶 9687714748008860 消息: 好的 的 AI 回應
+[2025-05-01T14:14:58.274Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T14:14:58.429Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T14:14:59.275Z] [PSID:9687714748008860] [類型:ai_raw_response] AI 回應: {"category": "其他", "confidence": 0.8}
+[2025-05-01T14:14:59.276Z] [PSID:9687714748008860] [類型:ai_response_success] AI 回應: {"category":"其他","confidence":0.8}
+[2025-05-01T14:14:59.276Z] [PSID:9687714748008860] [類型:classification_result] 分類結果: 其他, 信心值: 0.8
+[2025-05-01T14:14:59.276Z] [PSID:9687714748008860] [類型:db_query_start] 開始查詢分類 "其他" 的答案
+[2025-05-01T14:14:59.329Z] [PSID:9687714748008860] [類型:db_query_success] 成功找到分類 "其他" 的答案
+[2025-05-01T14:14:59.329Z] [PSID:9687714748008860] [類型:answer_found] 找到分類 "其他" 的答案，長度: 35 字符
+[2025-05-01T14:14:59.517Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"您好，請您附上出貨單明細，並告知商品名稱以及商品瑕疵照片\n小編這裡查詢商品狀況協助您處理後續\n✅商品收到7~14天內可協助您處理商品問題\n逾期則不受理，請見諒"}
+[2025-05-01T14:15:00.514Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 貨
+[2025-05-01T14:15:00.514Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T14:15:00.514Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 貨 的 AI 回應
+[2025-05-01T14:15:00.514Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T14:15:00.595Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T14:15:00.991Z] [PSID:9687714748008860] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T14:15:01.246Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "商品瑕疵/退貨", "confidence": 0.8}
+[2025-05-01T14:15:01.247Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"商品瑕疵/退貨","confidence":0.8}
+[2025-05-01T14:15:01.247Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 商品瑕疵/退貨, 信心值: 0.8
+[2025-05-01T14:15:01.247Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T14:15:01.299Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T14:15:01.299Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "商品瑕疵/退貨" 的答案，長度: 79 字符
+[2025-05-01T14:15:01.429Z] [PSID:9687714748008860] [類型:error] 發送訊息失敗: Request failed with status code 400
+[2025-05-01T14:15:02.083Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_9000
+[2025-05-01T14:15:02.983Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T14:15:03.192Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T14:15:03.813Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"您好，請您附上出貨單明細，並告知商品名稱以及商品瑕疵照片\n小編這裡查詢商品狀況協助您處理後續\n✅商品收到7~14天內可協助您處理商品問題\n逾期則不受理，請見諒"}
+[2025-05-01T14:15:03.993Z] [PSID:9687714748008860] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_b4ca7
+[2025-05-01T14:15:04.756Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 結束 的 AI 回應
+[2025-05-01T14:15:04.757Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T14:15:04.756Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: START, 是否回應: true
+[2025-05-01T14:15:04.756Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 結束
+[2025-05-01T14:15:04.848Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T14:15:05.423Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 1}
+[2025-05-01T14:15:05.425Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":1}
+[2025-05-01T14:15:05.425Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 1
+[2025-05-01T14:15:05.425Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-05-01T14:15:05.476Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-05-01T14:15:05.476Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-05-01T14:15:05.999Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_8ca8
+[2025-05-01T14:15:07.379Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T14:15:08.447Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-05-01T14:15:08.959Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T14:15:09.386Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T14:15:09.386Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 完成 的 AI 回應
+[2025-05-01T14:15:09.387Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T14:15:09.386Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 完成
+[2025-05-01T14:15:10.097Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_f940f
+[2025-05-01T14:15:10.292Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 1}
+[2025-05-01T14:15:10.293Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":1}
+[2025-05-01T14:15:10.293Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 1
+[2025-05-01T14:15:10.293Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-05-01T14:15:10.349Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-05-01T14:15:10.349Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-05-01T14:15:12.558Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T14:15:13.171Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-05-01T14:15:14.120Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T14:15:15.255Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_b7804
+[2025-05-01T14:15:32.549Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: START, 是否回應: true
+[2025-05-01T14:15:32.548Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我要
+[2025-05-01T14:15:32.549Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T14:15:32.549Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我要 的 AI 回應
+[2025-05-01T14:15:33.342Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "其他", "confidence": 0.8}
+[2025-05-01T14:15:33.343Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"其他","confidence":0.8}
+[2025-05-01T14:15:33.343Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "其他" 的答案
+[2025-05-01T14:15:33.343Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 其他, 信心值: 0.8
+[2025-05-01T14:15:33.394Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "其他" 的答案，長度: 35 字符
+[2025-05-01T14:15:33.394Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "其他" 的答案
+[2025-05-01T14:15:34.844Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T14:15:35.546Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"因為我現在是客服實習生，所以知道有限，待會等我詢問完主管就會馬上回復您"}
+[2025-05-01T14:15:36.801Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T14:15:38.111Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_c6990
+[2025-05-01T14:16:06.286Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T14:16:07.222Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T14:18:48.687Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T14:18:49.449Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T14:19:07.582Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T14:19:08.317Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T17:11:30.047Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T17:11:31.123Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T17:11:36.457Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T17:11:37.388Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T17:12:14.376Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我要
+[2025-05-01T17:12:14.377Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T17:12:15.320Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 退
+[2025-05-01T17:12:15.320Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T17:12:16.271Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 貨
+[2025-05-01T17:12:16.272Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T17:12:17.060Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 完成
+[2025-05-01T17:12:17.061Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T17:12:30.386Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T17:12:31.552Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T17:14:58.580Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T17:14:58.579Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我要
+[2025-05-01T17:15:06.298Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 退
+[2025-05-01T17:15:06.298Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T17:15:18.198Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 貨
+[2025-05-01T17:15:18.198Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T17:15:26.264Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 完成
+[2025-05-01T17:15:26.264Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T17:41:03.375Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是新朋友
+[2025-05-01T17:41:03.375Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T17:42:06.971Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T17:42:07.913Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T17:42:16.656Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 完成
+[2025-05-01T17:42:16.657Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T17:42:16.657Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 完成 的 AI 回應
+[2025-05-01T17:42:16.768Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T17:42:18.259Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"如何結單","confidence":0.8}
+[2025-05-01T17:42:18.257Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "如何結單", "confidence": 0.8}
+[2025-05-01T17:42:18.259Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "如何結單" 的答案
+[2025-05-01T17:42:18.259Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 如何結單, 信心值: 0.8
+[2025-05-01T17:42:18.320Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "如何結單" 的答案
+[2025-05-01T17:42:18.320Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "如何結單" 的答案，長度: 23 字符
+[2025-05-01T17:42:20.402Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T17:42:21.310Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"請您按照上方圖片步驟點選，即可順利結單唷，謝謝"}
+[2025-05-01T17:42:23.779Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T17:42:25.754Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_b7804
+[2025-05-01T17:42:53.761Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是新朋友
+[2025-05-01T17:42:53.761Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: START, 是否回應: true
+[2025-05-01T17:42:53.761Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是新朋友 的 AI 回應
+[2025-05-01T17:42:53.762Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T17:42:54.545Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 1}
+[2025-05-01T17:42:54.546Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 1
+[2025-05-01T17:42:54.546Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":1}
+[2025-05-01T17:42:54.546Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-05-01T17:42:54.603Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-05-01T17:42:54.603Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-05-01T17:42:56.529Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T17:42:57.273Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-05-01T17:42:58.934Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T17:43:00.272Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_6a134f2e
+[2025-05-01T18:02:14.918Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我要退貨
+[2025-05-01T18:02:14.918Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T18:04:50.015Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:04:50.975Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:08:29.391Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 完成
+[2025-05-01T18:08:29.391Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T18:08:29.392Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 完成 的 AI 回應
+[2025-05-01T18:08:29.511Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T18:08:30.814Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "如何結單", "confidence": 0.8}
+[2025-05-01T18:08:30.815Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"如何結單","confidence":0.8}
+[2025-05-01T18:08:30.816Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "如何結單" 的答案
+[2025-05-01T18:08:30.816Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 如何結單, 信心值: 0.8
+[2025-05-01T18:08:30.867Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "如何結單" 的答案
+[2025-05-01T18:08:30.867Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "如何結單" 的答案，長度: 23 字符
+[2025-05-01T18:08:32.856Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T18:08:33.696Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"請您按照上方圖片步驟點選，即可順利結單唷，謝謝"}
+[2025-05-01T18:08:36.230Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T18:08:37.726Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_b7804
+[2025-05-01T18:12:30.488Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:12:31.535Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:12:40.717Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:12:41.477Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:12:50.030Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:12:50.914Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:12:59.072Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:12:59.897Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:13:08.275Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:13:09.047Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:13:17.889Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:13:18.768Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:17:43.975Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:17:45.032Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:18:21.364Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:18:22.153Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:18:31.466Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:18:32.309Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:21:00.411Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:21:01.899Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:21:25.842Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:21:26.700Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:21:32.281Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我要退化
+[2025-05-01T18:21:32.281Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T18:21:33.222Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"請繼續補充您的訊息。"}
+[2025-05-01T18:22:31.967Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我說錯了我說要退貨結束
+[2025-05-01T18:22:31.967Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T18:22:31.968Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我要退化 我說錯了我說要退貨結束 的 AI 回應
+[2025-05-01T18:22:32.097Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T18:22:33.067Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "商品瑕疵/退貨", "confidence": 0.9}
+[2025-05-01T18:22:33.069Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"商品瑕疵/退貨","confidence":0.9}
+[2025-05-01T18:22:33.069Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 商品瑕疵/退貨, 信心值: 0.9
+[2025-05-01T18:22:33.069Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T18:22:33.411Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T18:22:33.411Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "商品瑕疵/退貨" 的答案，長度: 79 字符
+[2025-05-01T18:22:35.394Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T18:22:36.260Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"您好，請您附上出貨單明細，並告知商品名稱以及商品瑕疵照片\n小編這裡查詢商品狀況協助您處理後續\n✅商品收到7~14天內可協助您處理商品問題\n逾期則不受理，請見諒"}
+[2025-05-01T18:22:39.342Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T18:22:40.773Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_10572c75
+[2025-05-01T18:22:51.946Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 完成
+[2025-05-01T18:22:51.946Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: START, 是否回應: true
+[2025-05-01T18:22:51.946Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 完成 的 AI 回應
+[2025-05-01T18:22:51.947Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T18:22:53.596Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "商品瑕疵/退貨", "confidence": 0.9}
+[2025-05-01T18:22:53.597Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"商品瑕疵/退貨","confidence":0.9}
+[2025-05-01T18:22:53.597Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T18:22:53.597Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 商品瑕疵/退貨, 信心值: 0.9
+[2025-05-01T18:22:53.680Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T18:22:53.680Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "商品瑕疵/退貨" 的答案，長度: 79 字符
+[2025-05-01T18:22:55.939Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T18:22:56.739Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"您好，請您附上出貨單明細，並告知商品名稱以及商品瑕疵照片\n小編這裡查詢商品狀況協助您處理後續\n✅商品收到7~14天內可協助您處理商品問題\n逾期則不受理，請見諒"}
+[2025-05-01T18:22:57.900Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T18:22:59.372Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_b7804
+[2025-05-01T18:26:29.870Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:26:30.850Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:26:40.570Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:26:41.284Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:26:48.417Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:26:49.274Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:26:58.016Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:26:58.814Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:27:46.868Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:27:47.903Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:28:33.630Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:28:34.351Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:30:22.892Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:30:23.834Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:30:36.800Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:30:37.756Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:33:11.760Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:33:12.653Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:34:06.000Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:34:06.846Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:34:18.248Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:34:19.302Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:34:27.395Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:34:28.333Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:34:46.554Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:34:47.364Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:36:53.448Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:36:54.597Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:37:21.335Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:37:22.008Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:39:18.995Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:39:19.899Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:39:42.044Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:39:42.871Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:45:32.518Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:45:33.423Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:45:43.718Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:45:44.426Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:46:15.457Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:46:16.130Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:47:01.864Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:47:05.030Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:47:19.648Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:47:20.330Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:47:48.146Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:47:48.939Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:48:08.508Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:48:09.530Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:48:17.076Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:48:17.963Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:48:37.259Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:48:38.056Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:50:33.025Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:50:33.998Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:56:30.483Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:56:31.319Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:56:37.755Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:56:38.492Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:56:44.613Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:56:45.519Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:57:16.483Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:57:17.205Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T18:59:26.006Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T18:59:26.796Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:00:02.691Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:00:03.378Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:00:43.114Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:00:43.975Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:01:56.720Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:01:57.795Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:03:01.331Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:03:02.318Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:06:18.558Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:06:19.661Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:07:54.342Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:07:55.561Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:10:50.487Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:10:51.938Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:10:59.807Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:11:00.641Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:11:11.545Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:11:12.203Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:12:36.526Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:12:37.707Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:12:48.033Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:12:48.753Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:13:10.671Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:13:11.455Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:14:14.925Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:14:15.872Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:14:22.550Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:14:23.277Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:15:10.611Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:15:11.261Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:19:47.101Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:19:47.992Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:20:11.348Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:20:12.102Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:20:29.448Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:20:30.183Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:20:34.410Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:20:35.169Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:20:41.386Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:20:42.189Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:20:52.091Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:20:53.195Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:20:58.811Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:20:59.570Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:22:39.933Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:22:40.744Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:22:52.710Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:22:53.434Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:23:56.069Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:23:56.927Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:24:04.541Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是
+[2025-05-01T19:24:05.341Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T19:24:06.175Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"請繼續補充您的訊息。"}
+[2025-05-01T19:24:18.212Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 新的
+[2025-05-01T19:24:19.108Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T19:24:19.109Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是新的 的 AI 回應
+[2025-05-01T19:24:19.209Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T19:24:20.685Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 1}
+[2025-05-01T19:24:20.686Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":1}
+[2025-05-01T19:24:20.687Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 1
+[2025-05-01T19:24:20.687Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-05-01T19:24:20.738Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-05-01T19:24:20.738Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-05-01T19:24:22.840Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T19:24:23.816Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-05-01T19:24:26.024Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T19:24:27.304Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_2e207592
+[2025-05-01T19:24:59.913Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: START, 是否回應: true
+[2025-05-01T19:24:59.913Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我覺得商品怪怪的
+[2025-05-01T19:24:59.913Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我覺得商品怪怪的 的 AI 回應
+[2025-05-01T19:24:59.914Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T19:25:00.777Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "商品瑕疵/退貨", "confidence": 0.8}
+[2025-05-01T19:25:00.778Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"商品瑕疵/退貨","confidence":0.8}
+[2025-05-01T19:25:00.778Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 商品瑕疵/退貨, 信心值: 0.8
+[2025-05-01T19:25:00.778Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T19:25:00.831Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T19:25:00.831Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "商品瑕疵/退貨" 的答案，長度: 79 字符
+[2025-05-01T19:25:03.265Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T19:25:04.043Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"您好，請您附上出貨單明細，並告知商品名稱以及商品瑕疵照片\n小編這裡查詢商品狀況協助您處理後續\n✅商品收到7~14天內可協助您處理商品問題\n逾期則不受理，請見諒"}
+[2025-05-01T19:25:05.515Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T19:25:06.558Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_4a2ec705
+[2025-05-01T19:26:45.440Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我說
+[2025-05-01T19:26:46.449Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T19:26:47.239Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"請繼續補充您的訊息。"}
+[2025-05-01T19:26:52.319Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是
+[2025-05-01T19:26:53.120Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T19:26:53.767Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"看起來還沒說完喔，請繼續補充。"}
+[2025-05-01T19:27:15.731Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 新來的朋友
+[2025-05-01T19:27:16.476Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T19:27:16.476Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我說我是新來的朋友 的 AI 回應
+[2025-05-01T19:27:16.476Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T19:27:17.670Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 1}
+[2025-05-01T19:27:17.671Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":1}
+[2025-05-01T19:27:17.671Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-05-01T19:27:17.671Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 1
+[2025-05-01T19:27:17.723Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-05-01T19:27:17.723Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-05-01T19:27:19.932Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T19:27:20.869Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-05-01T19:27:22.304Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T19:27:23.433Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_2c23afb7
+[2025-05-01T19:48:29.787Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:48:30.832Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:49:58.836Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:49:59.903Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:50:20.763Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:50:21.670Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:52:37.759Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:52:38.954Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:52:45.814Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:52:46.634Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:53:38.948Z] [PSID:9699137316840143] [類型:image] 用戶發送了 image 類型的附件
+[2025-05-01T19:53:39.711Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"我收到了您的訊息，但目前只能回應文字內容。"}
+[2025-05-01T19:54:37.806Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:54:38.882Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:55:08.818Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:55:09.740Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:55:16.308Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:55:17.437Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:55:22.573Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是新朋友
+[2025-05-01T19:55:23.453Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T19:55:23.454Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是新朋友 的 AI 回應
+[2025-05-01T19:55:23.586Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T19:55:24.743Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 1}
+[2025-05-01T19:55:24.745Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":1}
+[2025-05-01T19:55:24.746Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-05-01T19:55:24.745Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 1
+[2025-05-01T19:55:24.796Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-05-01T19:55:24.796Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-05-01T19:55:26.822Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T19:55:27.785Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-05-01T19:55:28.438Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-05-01T19:55:30.173Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T19:55:32.329Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_6a134f2e
+[2025-05-01T19:55:39.182Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:55:40.241Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:56:07.512Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:56:08.589Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:58:11.226Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:58:12.465Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:58:30.219Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:58:31.196Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:58:50.995Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:58:51.707Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T19:59:55.591Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T19:59:56.576Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:00:33.111Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是
+[2025-05-01T20:00:33.939Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: WAITING_MORE, 是否回應: false
+[2025-05-01T20:00:34.674Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"請繼續補充您的訊息。"}
+[2025-05-01T20:00:46.883Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 心友
+[2025-05-01T20:00:47.814Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T20:00:47.815Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是心友 的 AI 回應
+[2025-05-01T20:00:47.961Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T20:00:48.893Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "其他", "confidence": 0.8}
+[2025-05-01T20:00:48.906Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"其他","confidence":0.8}
+[2025-05-01T20:00:48.906Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 其他, 信心值: 0.8
+[2025-05-01T20:00:48.907Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "其他" 的答案
+[2025-05-01T20:00:48.962Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "其他" 的答案
+[2025-05-01T20:00:48.962Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "其他" 的答案，長度: 35 字符
+[2025-05-01T20:00:51.033Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T20:00:51.663Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"因為我現在是客服實習生，所以知道有限，待會等我詢問完主管就會馬上回復您"}
+[2025-05-01T20:00:54.544Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T20:00:55.977Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_2e1f9b26
+[2025-05-01T20:04:30.455Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:04:31.457Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:04:38.984Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:04:39.963Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:04:46.415Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:04:47.202Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:04:59.309Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:05:00.130Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:05:29.752Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:05:30.738Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:06:24.831Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:06:25.649Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:06:33.734Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:06:34.684Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:07:38.109Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:07:39.050Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:07:47.455Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:07:48.275Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:08:33.155Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:08:33.898Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:08:48.832Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:08:49.962Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:09:04.835Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:09:05.778Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:09:23.249Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:09:24.150Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:09:50.251Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:09:51.195Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:10:22.523Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:10:23.330Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:12:09.979Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:12:10.905Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:12:42.828Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:12:43.601Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:12:54.111Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:12:54.888Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:13:17.044Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:13:18.316Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:13:49.007Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:13:49.948Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:14:43.544Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我覺得商品怪怪的
+[2025-05-01T20:14:44.320Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T20:14:44.321Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我覺得商品怪怪的 的 AI 回應
+[2025-05-01T20:14:44.426Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T20:14:45.779Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "商品瑕疵/退貨", "confidence": 0.8}
+[2025-05-01T20:14:45.780Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"商品瑕疵/退貨","confidence":0.8}
+[2025-05-01T20:14:45.780Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 商品瑕疵/退貨, 信心值: 0.8
+[2025-05-01T20:14:45.781Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "其他" 的答案
+[2025-05-01T20:14:45.910Z] [PSID:9699137316840143] [類型:answer_found] 因為沒有類別或信心不足，返回分類 "其他" 類別的答案，長度: 35 字符
+[2025-05-01T20:14:45.909Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "其他" 的答案
+[2025-05-01T20:14:47.989Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T20:14:48.654Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"因為我現在是客服實習生，所以知道有限，待會等我詢問完主管就會馬上回復您"}
+[2025-05-01T20:14:51.238Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T20:14:52.982Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_4a2ec705
+[2025-05-01T20:15:23.437Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是朋友啦
+[2025-05-01T20:15:23.437Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: START, 是否回應: true
+[2025-05-01T20:15:23.437Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是朋友啦 的 AI 回應
+[2025-05-01T20:15:23.438Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T20:15:25.365Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 1}
+[2025-05-01T20:15:25.366Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":1}
+[2025-05-01T20:15:25.366Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 1
+[2025-05-01T20:15:25.366Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "其他" 的答案
+[2025-05-01T20:15:25.424Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "其他" 的答案
+[2025-05-01T20:15:25.424Z] [PSID:9699137316840143] [類型:answer_found] 因為沒有類別或信心不足，返回分類 "其他" 類別的答案，長度: 35 字符
+[2025-05-01T20:15:27.350Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T20:15:28.068Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"因為我現在是客服實習生，所以知道有限，待會等我詢問完主管就會馬上回復您"}
+[2025-05-01T20:15:29.659Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T20:15:30.839Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_6a108bb8
+[2025-05-01T20:18:14.840Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:18:15.931Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:18:29.398Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:18:30.340Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:18:41.009Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:18:41.775Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:18:58.293Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:18:59.087Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:19:13.982Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是朋友啦
+[2025-05-01T20:19:15.074Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T20:19:15.074Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 我是朋友啦 的 AI 回應
+[2025-05-01T20:19:15.186Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T20:19:16.641Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "我是新朋友", "confidence": 1}
+[2025-05-01T20:19:16.643Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"我是新朋友","confidence":1}
+[2025-05-01T20:19:16.643Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 我是新朋友, 信心值: 1
+[2025-05-01T20:19:16.643Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "我是新朋友" 的答案
+[2025-05-01T20:19:16.751Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "我是新朋友" 的答案
+[2025-05-01T20:19:16.751Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "我是新朋友" 的答案，長度: 108 字符
+[2025-05-01T20:19:18.730Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T20:19:19.583Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"歡迎加入 K&Q 服飾\n新粉購物金請點下方連結⬇️\nhttps://jambolive.tv/pay/order/16918/\n提醒您，新粉購物金只保留一個星期，要和得標商品一起結單，請勿單獨結掉，這樣會沒有優惠喔！"}
+[2025-05-01T20:19:22.007Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T20:19:23.254Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_6a108bb8
+[2025-05-01T20:20:57.740Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:20:58.512Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:22:28.107Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:22:31.022Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:26:28.807Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:26:30.366Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:28:45.901Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:28:47.112Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:31:13.496Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:31:14.365Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:31:26.298Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:31:27.185Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:31:51.536Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:31:52.375Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:36:05.576Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:36:06.632Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:36:11.254Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:36:15.659Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:36:16.696Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T20:58:13.780Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:58:19.467Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T20:58:20.262Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:05:24.297Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:05:25.021Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:08:04.853Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:08:05.824Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:08:21.603Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 我是
+[2025-05-01T21:08:22.406Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: BUFFERING, 是否回應: false
+[2025-05-01T21:08:23.158Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"請繼續補充您的訊息。"}
+[2025-05-01T21:08:58.898Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:08:59.727Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:09:12.852Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:09:15.832Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:12:38.572Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:12:41.482Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:12:52.122Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:12:52.912Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:15:13.451Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:15:14.300Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:15:18.121Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:15:18.854Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:19:23.099Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:19:23.905Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:20:12.111Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:20:12.879Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:20:44.312Z] [PSID:SYSTEM] [類型:startup] 服務已啟動，監聽端口 8080
+[2025-05-01T21:20:45.157Z] [PSID:system] [類型:database] MongoDB 連接成功
+[2025-05-01T21:53:04.081Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 想要退貨
+[2025-05-01T21:53:04.932Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T21:53:04.935Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 想要退貨 的 AI 回應
+[2025-05-01T21:53:05.056Z] [PSID:system] [類型:db_categories] 從數據庫獲取了 8 個分類選項
+[2025-05-01T21:53:06.650Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "商品瑕疵/退貨", "confidence": 1}
+[2025-05-01T21:53:06.651Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"商品瑕疵/退貨","confidence":1}
+[2025-05-01T21:53:06.651Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 商品瑕疵/退貨, 信心值: 1
+[2025-05-01T21:53:06.651Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T21:53:06.713Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "商品瑕疵/退貨" 的答案
+[2025-05-01T21:53:06.713Z] [PSID:9699137316840143] [類型:answer_found] 找到分類 "商品瑕疵/退貨" 的答案，長度: 79 字符
+[2025-05-01T21:53:08.939Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T21:53:09.678Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"您好，請您附上出貨單明細，並告知商品名稱以及商品瑕疵照片\n小編這裡查詢商品狀況協助您處理後續\n✅商品收到7~14天內可協助您處理商品問題\n逾期則不受理，請見諒"}
+[2025-05-01T21:53:12.186Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T21:53:13.721Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_2e284016
+[2025-05-01T21:54:13.394Z] [PSID:9699137316840143] [類型:text] 用戶發送訊息: 你是誰?
+[2025-05-01T21:54:14.224Z] [PSID:9699137316840143] [類型:fsm_state] 用戶 9699137316840143 的狀態: DONE, 是否回應: true
+[2025-05-01T21:54:14.224Z] [PSID:9699137316840143] [類型:ai_processing] 正在生成對用戶 9699137316840143 消息: 你是誰? 的 AI 回應
+[2025-05-01T21:54:14.224Z] [PSID:system] [類型:cache_used] 使用緩存的分類數據
+[2025-05-01T21:54:15.192Z] [PSID:9699137316840143] [類型:ai_raw_response] AI 回應: {"category": "其他", "confidence": 0.8}
+[2025-05-01T21:54:15.193Z] [PSID:9699137316840143] [類型:classification_result] 分類結果: 其他, 信心值: 0.8
+[2025-05-01T21:54:15.193Z] [PSID:9699137316840143] [類型:ai_response_success] AI 回應: {"category":"其他","confidence":0.8}
+[2025-05-01T21:54:15.193Z] [PSID:9699137316840143] [類型:db_query_start] 開始查詢分類 "其他" 的答案
+[2025-05-01T21:54:15.240Z] [PSID:9699137316840143] [類型:answer_found] 因為沒有類別或信心不足，返回分類 "其他" 類別的答案，長度: 35 字符
+[2025-05-01T21:54:15.240Z] [PSID:9699137316840143] [類型:db_query_success] 成功找到分類 "其他" 的答案
+[2025-05-01T21:54:16.877Z] [PSID:9699137316840143] [類型:conversation_stored] 對話已存儲到 MongoDB
+[2025-05-01T21:54:17.660Z] [PSID:9699137316840143] [類型:bot_response] 機器人回覆: {"text":"因為我現在是客服實習生，所以知道有限，待會等我詢問完主管就會馬上回復您"}
+[2025-05-01T21:54:18.853Z] [PSID:system] [類型:pinecone_fetch_error] Pinecone fetch 請求失敗: Unexpected end of JSON input
+[2025-05-01T21:54:20.600Z] [PSID:9699137316840143] [類型:vector_stored] 對話已存儲到向量資料庫，向量 ID: faq_25a5569e

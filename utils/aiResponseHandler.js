@@ -565,12 +565,16 @@ const generateAIResponse = async (userId, userMessage, options = {}) => {
     );
 
     // 解析 JSON 回應，獲取分類結果
-    let parsedResponse = null;
-    let categoryValue = null;
+    let parsedResponse = null; // 解析後的回應
+    let categoryValue = null; // 分類結果
+    let confidence = null; // 信心值
+    let isConfident = null; // 信心值是否大於 0.8
 
     try {
-      parsedResponse = JSON.parse(cleanedResponse);
-      categoryValue = parsedResponse?.category;
+      parsedResponse = JSON.parse(cleanedResponse); // json 轉成 object
+      categoryValue = parsedResponse?.category; // 分類結果
+      confidence = parsedResponse?.confidence; // 信心值
+      isConfident = confidence >= 0.85; // 信心值是否大於 0.8
 
       if (categoryValue) {
         logger.logMessage(
@@ -591,13 +595,27 @@ const generateAIResponse = async (userId, userMessage, options = {}) => {
     }
 
     // 根據分類結果查找對應的答案
-    let answer = null;
-    if (categoryValue) {
-      answer = await findAnswerByCategory(categoryValue, userId);
+    // 再添加用信心值加入判斷
+    let answer = null; // 回復的訊息
+    if (categoryValue && isConfident) {
+      answer = await findAnswerByCategory(categoryValue, userId); // 到資料庫查找回答
 
+      // 如果有答案
       if (answer) {
         logger.logMessage(
           `找到分類 "${categoryValue}" 的答案，長度: ${answer.length} 字符`,
+          userId,
+          "answer_found"
+        );
+      }
+    } else {
+      // 如果沒分類結果或信心值不足
+      answer = await findAnswerByCategory("其他", userId); // 返回"其他" 類別的答案
+
+      // 如果有答案
+      if (answer) {
+        logger.logMessage(
+          `因為沒有類別或信心不足，返回分類 "其他" 類別的答案，長度: ${answer.length} 字符`,
           userId,
           "answer_found"
         );

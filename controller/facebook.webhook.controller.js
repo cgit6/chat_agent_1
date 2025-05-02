@@ -7,10 +7,27 @@ const config = require("../config");
 const { generateAIResponse } = require("../utils/aiResponseHandler");
 
 const User = require("../models/User"); // 使用者 schema
+const DialogueFSM = require("../scripts/fsm.chat");
+const { cleanUserInput } = require("../scripts/clean.user.input");
 
 // 模塊層級初始化環境變量
 const PAGE_ACCESS_TOKEN = config.PAGE_ACCESS_TOKEN;
 const VERIFY_TOKEN = config.VERIFY_TOKEN;
+
+// 為每個用戶維護一個狀態機實例
+const userFsmMap = new Map();
+
+/**
+ * 獲取用戶的狀態機，若不存在則創建
+ * @param {string} userId - 用戶 ID
+ * @returns {DialogueFSM} 用戶的狀態機實例
+ */
+function getUserFSM(userId) {
+  if (!userFsmMap.has(userId)) {
+    userFsmMap.set(userId, new DialogueFSM(10000)); // 創建新的狀態機實例
+  }
+  return userFsmMap.get(userId); // 返回用戶的狀態機實例
+}
 
 // 檢查環境變量（僅供診斷使用）
 // console.log("Webhook控制器環境變量檢查:");
@@ -155,22 +172,48 @@ async function checkIsNewUser(senderPsid) {
  * @returns {Promise<void>}
  */
 async function handleIncomingMessage(senderPsid, message, isNewUser) {
-  // console.log(
-  //   `收到來自 ${senderPsid} 的訊息:`,
-  //   JSON.stringify(message, null, 2)
-  // );
-
   // 如果訊息是文字訊息，則進行處理
   if (message.text) {
-    // 處理文字訊息
-    logTextMessage(senderPsid, message.text); // 記錄文字訊息
+    // 記錄文字訊息
+    logTextMessage(senderPsid, message.text);
+
+    // 獲取用戶的狀態機
+    const fsm = getUserFSM(senderPsid);
+
+    // 使用狀態機處理用戶消息
+    const result = await fsm.handleInput(message.text); // 判斷說完了沒，返回 { shouldRespond: false, message: '請繼續補充您的訊息。' }
+
+    logger.logMessage(
+      `用戶 ${senderPsid} 的狀態: ${fsm.state}, 是否回應: ${result.shouldRespond}`,
+      senderPsid,
+      "fsm_state"
+    );
+
+    // 只有當狀態機判斷應該回應時才生成回應
+    if (result.shouldRespond) {
+      // 整理用戶輸入的訊息
+      const userInput = cleanUserInput(result.message);
+
+      // 生成回復且發送回復
+      await generateAndSendResponse(
+        senderPsid,
+        { text: result.message },
+        isNewUser
+      );
+    } else {
+      // 發送簡單提示但不調用 AI
+      const response = { text: result.message };
+      // await sendResponse(senderPsid, "");
+      await sendResponse(senderPsid, response);
+    }
   } else if (message.attachments) {
     // 處理附件訊息
     const attachmentType = message.attachments[0]?.type || "未知";
-    logAttachmentMessage(senderPsid, attachmentType); // 記錄附件訊息
-  }
+    logAttachmentMessage(senderPsid, attachmentType);
 
-  await generateAndSendResponse(senderPsid, message, isNewUser); // 使用統一的訊息處理函數，而將用戶類型作為參數傳遞
+    // 附件類型消息直接回應，不經過狀態機
+    await generateAndSendResponse(senderPsid, message, isNewUser);
+  }
 }
 
 // 回應訊息
@@ -185,14 +228,14 @@ async function generateAndSendResponse(senderPsid, message, isNewUser = false) {
   }
 
   try {
-    // 調用 AI 回應產生器，將 isNewUser 作為參數傳遞
+    // 調用 AI 回應產生器，將 isNewUser 作為參數傳遞(是否是新用戶)
     const aiResponse = await generateAIResponse(senderPsid, message.text, {
       isNewUser,
       useTestMode: false, // 強制使用測試模式
     });
 
-    const response = { text: aiResponse };
-    await sendResponse(senderPsid, response);
+    const response = { text: aiResponse }; // 回應的訊息
+    await sendResponse(senderPsid, response); // 發送回應
   } catch (error) {
     // 錯誤處理邏輯保持不變
     console.error("AI 回應產生器錯誤:", error);
